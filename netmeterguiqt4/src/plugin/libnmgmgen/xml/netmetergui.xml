@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<guimoduledescription>
+    <info>
+        <module>NMGTrace</module>
+        <date>Tue, 31 Oct 2000 17:00:17 CET</date>
+        <version>0.1</version>
+    </info>
+
+    <description>
+      <layout type="vlayout">
+       	<options type="hlayout" text="Protocol" id="protocol">
+		<option checked="true">IPv4</option>
+		<option>IPv6</option>
+	</options>
+       	<frame>
+       		<layout type="grid" rows="3" cols="2">
+			<label>Source:</label>
+			<text id="source"/>
+			<label>User:</label>
+			<text id="user"/>
+			<label>Password:</label>
+			<text id="password"/>
+       		</layout>
+       	</frame>
+
+	<frame>	
+         	<layout type="grid"  rows="1" cols="2">
+	   		<label>Destination</label>
+	   		<text id="destination"/>
+          	</layout>
+	</frame>
+
+       <layout type="hlayout">
+         <button id="configure">Configure traceroute</button>
+         <button id="start">Start traceroute</button>
+         <button id="execute">Configure + Start traceroute</button>
+       </layout>
+      </layout>
+    </description>
+    
+    <actions>
+     <action id="configure" type="clicked">
+	<send type="configure" module="NMTrace">
+		<data>
+			<protocol>$protocol</protocol>
+			<source>
+				<name>$source</name>
+				<login>$user</login>
+				<password>$password</password>
+			</source>
+			<destination>
+				<name>$destination</name>
+			</destination>
+		</data>
+	</send>
+     </action>
+     <action id="start" type="clicked">
+	<send type="start" module="NMTtrace">
+		<data>
+			<protocol>$protocol</protocol>
+			<source>
+				<name>$source</name>
+				<login>$user</login>
+				<password>$password</password>
+			</source>
+			<destination>
+				<name>$destination</name>
+			</destination>
+		</data>
+	</send>
+     </action>
+     <action id="execute" type="clicked">
+	<send type="configure" module="NMTtrace">
+		<data>
+			<protocol>$protocol</protocol>
+			<source>
+				<name>$source</name>
+				<login>$user</login>
+				<password>$password</password>
+			</source>
+			<destination>
+				<name>$destination</name>
+			</destination>
+		</data>
+	</send>
+	<send type="start" module="NMTtrace">
+		<data>
+		</data>
+	</send>
+     </action>
+    </actions>
+</guimoduledescription>
+ 

@@ -1,0 +1,45 @@
+# - Try to find freetype2
+# Once done this will define
+#
+#  FREETYPE2_FOUND        - system has freetype2
+#  FREETYPE2_INCLUDE_DIR  - the freetype2 include directory
+#  FREETYPE2_LIBRARIES    - Link these to use freetype2
+#  FREETYPE2_DEFINITIONS  - Compile switches
+
+IF (FREETYPE2_INCLUDE_DIR AND FREETYPE2_LIBRARIES)
+   # in cache already
+   SET(LibFREETYPE2_FIND_QUIETLY TRUE)
+ENDIF (FREETYPE2_INCLUDE_DIR AND FREETYPE2_LIBRARIES)
+
+INCLUDE(UsePkgConfig)
+
+PKGCONFIG(freetype2 _FREETYPE2IncDir _FREETYPE2LinkDir _FREETYPE2LinkFlags _FREETYPE2Cflags)
+IF (_FREETYPE2IncDir AND _FREETYPE2LinkDir)
+        SET(FREETYPE2_DEFINITIONS ${_FREETYPE2Cflags})
+        SET(FREETYPE2_LIBRARIES ${_FREETYPE2LinkFlags})
+	FIND_PATH(FREETYPE2_INCLUDE_DIR freetype/config/ftheader.h
+	    ${_FREETYPE2IncDir}
+	)
+	IF (NOT FREETYPE2_INCLUDE_DIR)
+	   SET(_tmpDir ${_FREETYPE2IncDir}/freetype2)
+	   message (${_tmpDir})
+	   FIND_PATH(FREETYPE2_INCLUDE_DIR freetype/config/ftheader.h
+	      ${_tmpDir}
+	   )
+	ENDIF (NOT FREETYPE2_INCLUDE_DIR)
+	SET(FREETYPE2_FOUND TRUE)
+        MESSAGE(STATUS "Found FreeType2 libraries: ${FREETYPE2_LIBRARIES}")
+        MESSAGE(STATUS "Found FreeType2 Includes: ${FREETYPE2_INCLUDE_DIR}")
+ELSE (_FREETYPE2IncDir AND _FREETYPE2LinkDir)
+        IF (FREETYPE2_FIND_REQUIRED)
+            MESSAGE(SEND_ERROR "Could not find freetype2")
+        ELSE (FREETYPE2_FIND_REQUIRED)
+            MESSAGE(STATUS "Could not find freetype2")
+        ENDIF (FREETYPE2_FIND_REQUIRED)
+ENDIF (_FREETYPE2IncDir AND _FREETYPE2LinkDir)
+
+MARK_AS_ADVANCED (
+FREETYPE2_DEFINITIONS
+FREETYPE2_LIBRARIES
+FREETYPE2_INCLUDE_DIR
+)

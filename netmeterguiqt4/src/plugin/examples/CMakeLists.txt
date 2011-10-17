@@ -1,0 +1,4 @@
+add_subdirectory(libnmgexemplesubscriptor)
+add_subdirectory(libnmgexemplerequest)
+add_subdirectory(libnmgexemple)
+add_subdirectory(libnmgstatisticrequest)

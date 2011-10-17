@@ -1,0 +1,14 @@
+<nmgconverter>
+	<file>MGenDLYParser.py</file>
+	<sdesc>DLY to XFF conversion</sdesc>
+	<desc>Python script that converts a mgen dly file (version 3.x | 4.x) into a netmeter xff file. It's mandatory to specify the mgen version of the dly file in order to run the script successfully.</desc>
+	<usage>
+		<in num="2"> 
+			<pin type="int" min="3" max="4"> MGen version: </pin>
+			<pin type="file" ext="*.dly"> Input DLY file: </pin>
+		</in>
+		<out num="1">
+			<pout type="file" ext="*.xff"> Output XFF file: </pout>
+		</out>
+	</usage>
+</nmgconverter>

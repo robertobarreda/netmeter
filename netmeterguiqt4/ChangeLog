@@ -1,0 +1,1968 @@
+2006-06-27 00:07  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphdataloader.cpp,
+	  nmggraphdataloader.h, nmggraphicwidget.h,
+	  nmgmgengraphdataloader.cpp, nmgmgengraphdataloader.h: [no log
+	  message]
+
+2006-06-26 03:07  dlacort
+
+	* src/plugin/libnmggraph/: Makefile.am, nmgflowlistitem.cpp,
+	  nmgflowlistitem.h, nmggraphicobject.cpp, nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp, nmggraphwidget.h,
+	  nmgmgenxmlflowformatreader.cpp, nmgmgenxmlflowformatreader.h,
+	  nmgxmlflowformatreader.cpp, nmgxmlflowformatreader.h: [no log
+	  message]
+
+2006-06-23 11:53  pcapella
+
+	* src/core/: nmsocket.h, nmerror.h: Corregit error al compilar
+
+2006-06-23 11:49  pcapella
+
+	* src/gui/widgets/popupmessage/: Makefile.am, messagebar.cpp,
+	  messagebar.h, overlaywidget.cpp, overlaywidget.h,
+	  popupmessage.cpp, popupmessage.h: VersiÛ inicial
+
+2006-06-23 11:48  pcapella
+
+	* src/gui/widgets/Makefile.am: Afegit popupmessage
+
+2006-06-22 21:00  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenmainwidget.ui, nmgmgenwidget.cpp,
+	  nmgmgenxmlinterpret.cpp, nmgmgenxmltags.h: udpate interpret mgen
+	  gui
+
+2006-06-20 00:01  enieto
+
+	* src/gui/: nmgconnection.cpp, nmgconnection.h, nmginterpret.cpp,
+	  nmginterpret.h: Update per a que no es solapin els missates que
+	  arriben als socket de la GUI
+
+2006-06-19 19:24  enieto
+
+	* src/gui/: nmghostinformationmanager.cpp,
+	  widgets/nmgmaintabbar.cpp, widgets/nmgmaintabbar.h,
+	  widgets/nmgmaintabwidget.cpp, widgets/nmgmaintabwidget.h,
+	  widgets/nmgmainwindow.cpp, widgets/nmgmainwindow.h,
+	  widgets/nmgmainwindowmenubar.cpp, widgets/nmgmainwindowmenubar.h:
+	  Afegim ctrl+W per a poder tancar el curent tab
+
+2006-06-12 10:36  pcapella
+
+	* src/gui/widgets/: nmghostinformationcombowidget.cpp,
+	  nmghostinformationcombowidget.h: Pau Capella
+	  <pcapella@ac.upc.edu>       Afegit un color vermell en el cas que
+	  de que el host introduÔt per l'usuari no estigui a la base de
+	  dades de hosts.
+
+2006-06-11 23:57  enieto
+
+	* src/: gui/Makefile.am, gui/nmgdnsresolver.cpp,
+	  gui/nmgdnsresolver.h, gui/nmghost.cpp, gui/nmghost.h,
+	  plugin/libnmgmgen/nmgmgenxmlinterpret.cpp: Update fer fer
+	  resolves DNS a la classe host
+
+2006-06-10 20:44  enieto
+
+	* debug/src/icons/trend.png: nova icona per a grafiques
+
+2006-06-09 00:51  dlacort
+
+	* src/plugin/libnmggraph/: Makefile.am, nmgflowlistview.cpp,
+	  nmggraph.cpp, nmggraph.h, nmggraphicwidget.cpp,
+	  nmggraphwidget.cpp, nmggraphwidget.h, nmggraphwidgetbase.ui,
+	  nmgmgenflowmetadata.cpp, nmgmgenflowmetadata.h,
+	  nmgmgenxmlflowformatreader.cpp, nmgmgenxmlflowformatreader.h,
+	  nmgxmlflowformatreader.cpp, nmgxmlflowformatreader.h: [no log
+	  message]
+
+2006-06-08 23:28  enieto
+
+	* src/plugin/libnmgmgen/nmgmgenwidget.cpp: Update per a que flow id
+	  comenci a partir de 1 la numeracio
+
+2006-06-07 23:37  enieto
+
+	* src/: gui/nmghostinformationmanager.cpp, gui/nmgstation.cpp,
+	  gui/nmgstation.h, gui/widgets/nmghostinformationmainwidget.ui,
+	  gui/widgets/nmghostinformationwidget.cpp,
+	  gui/widgets/nmghostinformationwidget.h,
+	  plugin/libnmgmgen/nmgmgenxmlinterpret.cpp: Update classes per
+	  acceptar ports diferents de connexio
+
+2006-06-04 20:48  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgenwidget.cpp,
+	  nmgmgenwidget.h, nmgmgenwidgeterrornotifier.cpp,
+	  nmgmgenwidgeterrornotifier.h, nmgmgenxmltags.h: Separo la
+	  notificacio d'errors del widget del MGEN a la GUI per a no
+	  carregar tant la classe
+
+2006-06-04 20:47  enieto
+
+	* src/gui/: nmgconnection.cpp, widgets/Makefile.am,
+	  widgets/nmgestablishingconnectionwidget.cpp,
+	  widgets/nmgestablishingconnectionwidget.h,
+	  widgets/nmghostinformationwidget.cpp,
+	  widgets/nmgtaskprogressbar.cpp,
+	  widgets/statusbarprogress/statusbarprogresswidget.cpp,
+	  nmgconnection.h: Li afegeixo un widget que es mostra un segon per
+	  indicar que s'ha connectat al server
+
+2006-06-04 12:57  enieto
+
+	* src/plugin/: nmgisender.h, nmgmodule.cpp, nmgmodule.h: Update
+	  sendCommand per a retornar resultat al enviar comanda
+
+2006-06-04 12:56  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgenmainwidget.ui,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h: Update mgen GUI
+
+2006-06-04 12:55  enieto
+
+	* src/gui/: nmgconnection.cpp, nmgconnection.h: Update
+	  NMGConnection to return send result
+
+2006-06-03 21:33  enieto
+
+	* src/gui/widgets/nmgmainwindow.cpp: Update main window
+
+2006-06-01 00:56  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenmainwidget.ui, nmgmgenwidget.cpp,
+	  nmgmgenwidget.h, nmgmgenxmlinterpret.cpp: Update module MGEN gui
+	  per actualitzar b√© el temps
+
+2006-05-31 00:50  enieto
+
+	* netmetergui.kdevelop, netmetergui.kdevelop.pcs,
+	  netmetergui.kdevses, src/plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  src/plugin/libnmgmgen/nmgmgenxmlinterpret.cpp,
+	  src/plugin/libnmgmgen/nmgmgenxmltags.h: Update module MGEN gui
+	  interpret per nou format fitxer test
+
+2006-05-30 17:43  enieto
+
+	* src/plugin/nmgmodule.cpp: Update NMGModule a getModuleKey
+
+2006-05-30 17:43  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenmainwidget.ui, nmgmgenwidget.cpp,
+	  nmgmgenwidget.h, nmgmgenxmlinterpret.cpp: Update widget i module
+	  OWD al GUI
+
+2006-05-24 19:24  dlacort
+
+	* src/plugin/libnmggraph/: nmggraph.h, nmggraphwidget.cpp,
+	  nmggraphwidgetbase.ui: [no log message]
+
+2006-05-22 17:52  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp,
+	  nmggraphicwidget.cpp, nmggraphicwidget.h, nmggraphwidget.cpp,
+	  nmggraphwidget.h: [no log message]
+
+2006-05-19 13:13  pcapella
+
+	* src/nmgmain.cpp: Eliminem la carrega del plugin libnmgnetperf
+
+2006-05-19 13:12  pcapella
+
+	* src/plugin/libnmgnetperf/: Makefile.am, nmgnetperf.cpp,
+	  nmgnetperf.h, nmgnetperfwidget.ui, nmgnetperfwidgetimpl.cpp,
+	  nmgnetperfwidgetimpl.h: Eliminem el libnmgnetperf
+
+2006-05-19 13:11  pcapella
+
+	* src/plugin/Makefile.am: Eliminen el libnmgnetperf
+
+2006-05-19 13:06  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistitem.cpp, nmgflowlistitem.h,
+	  nmggraphicwidget.cpp, nmggraphicwidget.h, nmggraphwidget.cpp,
+	  nmggraphwidget.h: [no log message]
+
+2006-05-17 17:45  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp, nmgflowlistview.h,
+	  nmggraphicwidget.cpp, nmggraphicwidget.h, nmggraphwidget.cpp,
+	  nmggraphwidget.h, nmggraphwidgetbase.ui: [no log message]
+
+2006-05-17 01:28  dlacort
+
+	* src/plugin/libnmggraph/: Makefile.am, nmgflowlistview.cpp,
+	  nmgflowlistview.h, nmggraphicobject.cpp, nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp, nmggraphwidget.h,
+	  nmggraphwidgetbase.ui: [no log message]
+
+2006-05-08 12:13  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicobject.cpp,
+	  nmggraphicobject.h, nmggraphwidget.cpp: [no log message]
+
+2006-05-04 17:14  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicobject.cpp,
+	  nmggraphicobject.h, nmggraphicwidget.cpp, nmggraphicwidget.h,
+	  nmggraphwidget.cpp, nmggraphwidget.h: [no log message]
+
+2006-05-04 12:06  dlacort
+
+	* src/plugin/libnmgmgen/nmgmgenmainwidget.ui: [no log message]
+
+2006-05-03 21:15  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenflow.cpp, nmgmgenmainwidget.ui,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h, nmgmgenxmlinterpret.cpp:
+	  Update modul MGEN gui
+
+2006-05-03 18:09  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgenflow.cpp,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h, nmgmgenxmlinterpret.cpp:
+	  Update module MGEN gui
+
+2006-05-03 18:08  enieto
+
+	* src/gui/: nmginterpret.cpp, widgets/nmgtaskprogressbar.cpp,
+	  widgets/widgetfromxml/nmgwidgetfromxmlaction.cpp: Update classes
+	  ...
+
+2006-05-03 01:00  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp, nmgflowlistview.h,
+	  nmggraphicobject.cpp, nmggraphicobject.h, nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp, nmggraphwidgetbase.ui:
+	  [no log message]
+
+2006-05-02 22:51  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenwidget.cpp,
+	  nmgmgenxmlinterpret.cpp, nmgmgenxmlinterpret.h, nmgmgenxmltags.h:
+	  Update modul MGEN gui per mostrar l'status del test amb la barra
+	  de progres
+
+2006-05-02 19:50  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenwidget.cpp, nmgmgenwidget.h:
+	  Update modul MGEN gui per mostrar l'status del test
+
+2006-05-02 18:57  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgen.h,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h, nmgmgenxmlinterpret.cpp,
+	  nmgmgenxmlinterpret.h, nmgmgenxmltags.h: Update modul MGEN gui
+
+2006-05-02 14:45  enieto
+
+	* src/gui/nmgconnection.cpp: Update connection
+
+2006-05-01 17:15  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenmainwidget.ui, nmgmgenwidget.cpp,
+	  nmgmgenxmltags.h: Update modul MGEN widget per a tractar algunes
+	  situacions d'error
+
+2006-05-01 17:15  enieto
+
+	* src/gui/: widgets/nmghostinformationcombowidget.cpp,
+	  widgets/nmghostinformationcombowidget.h,
+	  widgets/nmghostinformationmainwidget.ui,
+	  widgets/nmghostinformationwidget.cpp,
+	  widgets/nmghostinformationwidget.h,
+	  nmghostinformationmanager.cpp, nmghostinformationmanager.h:
+	  Update host combo widget per a poder indicar quin widget ha te
+	  tenir el focus al fer el show
+
+2006-05-01 11:57  enieto
+
+	* src/plugin/: nmgmodule.cpp, nmgmodule.h,
+	  libnmgexemple/nmgexemple.cpp, libnmgexemple/nmgexemple.h,
+	  libnmgexemplerequest/nmgexempleadder.cpp,
+	  libnmgexemplerequest/nmgexempleadder.h,
+	  libnmgexemplerequest/nmgexemplerequest.cpp,
+	  libnmgexemplerequest/nmgexemplerequest.h,
+	  libnmgexemplesubscriptor/nmgexemplesubscripted.cpp,
+	  libnmgexemplesubscriptor/nmgexemplesubscripted.h,
+	  libnmgexemplesubscriptor/nmgexemplesubscriptor.cpp,
+	  libnmgexemplesubscriptor/nmgexemplesubscriptor.h,
+	  libnmgsnooper/nmgsnooper.cpp, libnmgsnooper/nmgsnooper.h,
+	  libnmgtrace/nmgtrace.cpp, libnmgtrace/nmgtrace.h: Update de la
+	  crida dataReceived: pasa de tenir la definicio  QWidget *
+	  dataReceived(QString data) a	void dataReceived(QString data)
+
+2006-04-30 18:34  enieto
+
+	* src/plugin/libnmgmgen/nmgmgen.cpp: Update modul MGEN gui
+
+2006-04-29 21:27  enieto
+
+	* src/plugin/libnmgmgen/nmgmgenwidget.cpp: Update widget del modul
+	  MGEN de la GUI
+
+2006-04-28 14:54  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp, nmggraphwidgetbase.ui:
+	  [no log message]
+
+2006-04-27 20:57  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgen.h,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h: Update modul MGEN gui
+
+2006-04-27 20:56  enieto
+
+	* src/: gui/nmgconnection.cpp, gui/nmgconnection.h,
+	  gui/nmginterpret.cpp, gui/nmgutil.h, plugin/nmgmodule.cpp,
+	  plugin/nmgmodule.h, plugin/nmgmodulemanager.cpp,
+	  plugin/nmgmodulemanager.h: Update recepcio errors
+
+2006-04-27 17:23  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp, nmgflowlistview.h,
+	  nmggraphicwidget.cpp, nmggraphicwidget.h, nmggraphwidget.cpp,
+	  nmggraphwidget.h, nmggraphwidgetbase.ui: [no log message]
+
+2006-04-27 14:13  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp, nmgflowlistview.h,
+	  nmggraphicwidget.cpp, nmggraphicwidget.h, nmggraphwidget.cpp,
+	  nmggraphwidget.h, nmggraphwidgetbase.ui: [no log message]
+
+2006-04-25 18:26  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp, nmgflowlistview.h,
+	  nmggraphicobject.h, nmggraphicwidget.cpp, nmggraphicwidget.h,
+	  nmggraphwidget.cpp, nmggraphwidget.h: [no log message]
+
+2006-04-25 17:24  enieto
+
+	* src/plugin/nmgmodulepreferencesmanager.cpp: Up0date
+
+2006-04-25 17:21  enieto
+
+	* src/gui/: nmgimagemanager.cpp, nmgpreferencesmanager.cpp,
+	  nmgpreferencesmanager.h, widgets/nmgmoduletoolboxitem.cpp,
+	  widgets/nmgmoduletoolboxitem.h: Update bug imatges ren√©
+
+2006-04-25 16:12  enieto
+
+	* src/: gui/nmgpreferencesmanager.cpp,
+	  gui/widgets/nmgpreferencesmodulewidget.cpp,
+	  plugin/nmgmodulefactory.cpp, plugin/nmgmodulemanager.cpp,
+	  plugin/nmgmodulemanager.h, nmgmain.cpp: Update per
+	  carregar/descarregar moduls
+
+2006-04-25 15:46  rserral
+
+	* ChangeLog, config.h.in, configure.files, configure.in: rserral:
+	  final OpenGL detection stuff
+
+2006-04-25 15:36  rserral
+
+	* configure.in.in: rserral: OpenGL detection fix
+
+2006-04-25 15:34  rserral
+
+	* src/plugin/libnmggraph/Makefile.am: rseral: OpenGL detection fix
+
+2006-04-25 15:32  rserral
+
+	* src/plugin/Makefile.am: rserral: Fix for OpenGL detection
+
+2006-04-24 23:13  enieto
+
+	* src/plugin/: Makefile.am, nmgmodule.cpp, nmgmodule.h,
+	  nmgmodulepreferencesmanager.cpp, nmgmodulepreferencesmanager.h:
+	  Update modil per a emmagatzemar preferencies
+
+2006-04-24 18:46  enieto
+
+	* src/gui/: nmgconnection.cpp, nmgmessagecenter.cpp: Update
+	  correccio bug a connexio: al fer el deattach fer un close del
+	  socket tambe
+
+2006-04-24 16:55  rserral
+
+	* autom4te.cache/: output.0, requests, traces.0: rserral: The
+	  automake cache shouldn't be on the CVS
+
+2006-04-23 23:25  enieto
+
+	* src/plugin/: nmgimodulecommunication.h, nmgmodule.cpp,
+	  nmgmodule.h, nmgmodulecommunicationmanager.cpp,
+	  nmgmodulecommunicationmanager.h: Update per executar moduls sense
+	  subscripcions
+
+2006-04-20 18:02  enieto
+
+	* src/gui/: widgets/Makefile.am,
+	  widgets/nmgpreferencesbasewidget.ui,
+	  widgets/nmgpreferencesmodulebasewidget.ui,
+	  widgets/nmgpreferencesmodulewidget.cpp,
+	  widgets/nmgpreferencesmodulewidget.h,
+	  widgets/nmgpreferenceswidget.cpp, widgets/nmgpreferenceswidget.h,
+	  nmgpreferencesmanager.cpp, nmgpreferencesmanager.h: Update
+	  preferences per a triar quins moduls carregar
+
+2006-04-20 15:36  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp: [no log message]
+
+2006-04-19 15:54  enieto
+
+	* src/plugin/Makefile.am: Update Makefile.am dels plugins
+
+2006-04-19 15:53  enieto
+
+	* src/plugin/nmgmodulefactory.cpp: Update correccio bug per si no
+	  existeix un modul
+
+2006-04-18 23:44  enieto
+
+	* src/: nmgmain.cpp, gui/nmgapplicationinformation.cpp,
+	  gui/nmgapplicationinformation.h, gui/nmgpreferencesmanager.cpp:
+	  Update per emmagatzemar els fitxer sde configuracio a
+	  $HOME/.netmeter
+
+2006-04-18 19:39  enieto
+
+	* src/gui/widgets/nmgmaintabwidget.cpp: Update per a ficar un
+	  layout al Scrollview del widget de la main window
+
+2006-04-18 19:28  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenflow.cpp, nmgmgenflow.h,
+	  nmgmgenflowmanager.cpp, nmgmgenflowmanager.h,
+	  nmgmgenflowmodification.cpp, nmgmgenflowmodification.h,
+	  nmgmgenflowrsvp.cpp, nmgmgenflowrsvp.h, nmgmgenwidget.cpp,
+	  nmgmgenwidget.h, nmgmgenxmlinterpret.cpp, nmgmgenxmltags.h: M√©s
+	  update modul MGEN GUI
+
+2006-04-18 19:28  enieto
+
+	* src/gui/widgets/: nmghostinformationcombowidget.cpp,
+	  nmghostinformationcombowidget.h: Update widgets per icones tab
+	  widget ...
+
+2006-04-17 23:06  enieto
+
+	* src/gui/widgets/nmgmoduletoolboxitem.cpp,
+	  src/gui/widgets/nmgmoduletoolboxitem.h,
+	  src/plugin/libnmgmgen/nmgmgenwidget.cpp, src/plugin/Makefile.am,
+	  src/plugin/nmgmodtabwidgetmanager.cpp,
+	  src/plugin/nmgmodtabwidgetmanager.h, debug/src/icons/runb.png:
+	  Update icones tab widget
+
+2006-04-17 14:28  enieto
+
+	* src/: gui/widgets/nmgmaintabwidget.cpp,
+	  gui/widgets/nmgmaintabwidget.h, plugin/Makefile.am,
+	  plugin/nmgmodtabwidgetmanager.cpp,
+	  plugin/nmgmodtabwidgetmanager.h, plugin/nmgmodule.cpp,
+	  plugin/nmgmodule.h, plugin/nmgmoduletabwidgetmanager.cpp,
+	  plugin/nmgmoduletabwidgetmanager.h,
+	  plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  plugin/libnmgmgen/nmgmgenwidget.h: Update per canviar icones a
+	  tab widget
+
+2006-04-17 14:28  enieto
+
+	* debug/src/icons/: runa.png, runb.png: M√©s icones
+
+2006-04-17 10:55  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp, nmggraphwidget.h:
+	  afegides "etiquetes" als eixos
+
+2006-04-13 20:01  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicobject.cpp,
+	  nmggraphicobject.h, nmggraphicwidget.cpp, nmggraphicwidget.h,
+	  nmggraphwidget.cpp, nmggraphwidget.h, nmggraphwidgetbase.ui: [no
+	  log message]
+
+2006-04-12 21:01  enieto
+
+	* src/: gui/widgets/nmgmaintabwidget.cpp,
+	  gui/widgets/nmgmaintabwidget.h, gui/widgets/nmgmainwindow.cpp,
+	  gui/widgets/nmgmainwindow.h, plugin/libnmgmgen/nmgmgen.cpp,
+	  plugin/libnmgmgen/nmgmgen.h, plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  plugin/libnmgmgen/nmgmgenwidget.h, plugin/Makefile.am,
+	  plugin/nmgmodule.cpp, plugin/nmgmodule.h,
+	  plugin/nmgmoduletabwidgetmanager.cpp,
+	  plugin/nmgmoduletabwidgetmanager.h: Update per a ficar icones als
+	  moduls
+
+2006-04-11 19:58  enieto
+
+	* src/gui/widgets/: Makefile.am, nmgmainwindow.cpp,
+	  nmgmainwindow.h, nmgmainwindowbase.ui, nmgmainwindowmenubar.cpp,
+	  nmgmainwindowmenubar.h, nmgmainwindowtoolbar.cpp,
+	  nmgmainwindowtoolbar.h: Update classes per separar menu i tool
+	  bar de la main window (per simplificar funcions d'aquesta)
+
+2006-04-10 19:09  enieto
+
+	* src/gui/widgets/: nmgmaintabwidget.cpp, nmgmaintabwidget.h,
+	  nmgmainwindow.cpp: Update main window per a tenir scroll views
+	  als moduls
+
+2006-04-08 19:39  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp: [no log message]
+
+2006-04-05 18:12  dlacort
+
+	* src/plugin/libnmggraph/: nmggraphicobject.cpp,
+	  nmggraphicobject.h, nmggraphicwidget.cpp: [no log message]
+
+2006-04-05 16:35  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp, nmgflowlistview.h,
+	  nmggraphicobject.cpp, nmggraphicwidget.cpp, nmggraphicwidget.h,
+	  nmggraphwidget.cpp, nmggraphwidget.h: [no log message]
+
+2006-04-02 21:29  enieto
+
+	* src/plugin/libnmgmgen/nmgmgenxmlinterpret.cpp: Update interpret
+	  mgen
+
+2006-04-02 19:43  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgenflow.cpp,
+	  nmgmgenflow.h, nmgmgenflowmodification.cpp,
+	  nmgmgenflowmodification.h, nmgmgenmainwidget.ui,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h, nmgmgenxmlinterpret.cpp,
+	  nmgmgenxmlinterpret.h: Update modul MGEN gui
+
+2006-04-02 13:26  enieto
+
+	* src/nmgmain.cpp, src/plugin/Makefile.am, configure.in: Update pel
+	  nou modul SendFile
+
+2006-04-02 13:26  enieto
+
+	* src/plugin/utils/: Makefile.am, nmgsecuresendfile.cpp,
+	  nmgsecuresendfile.h, nmgsecuresendfilebasewidget.ui,
+	  nmgsecuresendfilewidget.cpp, nmgsecuresendfilewidget.h: Nou modul
+	  per a enviar fitxers a un host remot (via ssh)
+
+2006-04-02 13:25  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenflowmanager.cpp,
+	  nmgmgenflowmanager.h: Update flow manager per a que els ports
+	  siguin aleatoris i no tots comencin pel port 5000
+
+2006-04-02 13:24  enieto
+
+	* src/gui/nmgconnection.cpp: [no log message]
+
+2006-04-01 21:15  enieto
+
+	* src/plugin/libnmgmgen/nmgxmlflowsortedlist.cpp: Update per
+	  ordenar be: abanas on que mod del fateix flow_id
+
+2006-04-01 21:15  enieto
+
+	* src/plugin/libnmgmgen/nmgmgenmainwidget.ui: Update ui header
+	  global to local
+
+2006-03-31 23:17  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenflow.cpp,
+	  nmgmgenflowmodification.cpp, nmgmgenflowmodification.h,
+	  nmgmgenmainwidget.ui, nmgmgenwidget.cpp,
+	  nmgxmlflowsortedlist.cpp: M√©s update modul MGEN GUI
+
+2006-03-31 00:37  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgenflow.cpp,
+	  nmgmgenflow.h, nmgmgenwidget.cpp, nmgmgenwidget.h,
+	  nmgxmlflowsortedlist.cpp, nmgxmlflowsortedlist.h: Update modul
+	  MGEN GUI per a ordenar les llistes de flows per temps
+
+2006-03-30 22:57  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenflow.cpp, nmgmgenflow.h,
+	  nmgmgenflowrsvp.cpp, nmgmgenwidget.cpp, nmgmgenwidget.h,
+	  nmgmgenxmltags.h: Update modul MGEN GUI
+
+2006-03-30 21:21  dlacort
+
+	* src/plugin/libnmggraph/: nmgflowlistview.cpp, nmgflowlistview.h:
+	  [no log message]
+
+2006-03-30 20:40  dlacort
+
+	* src/plugin/libnmggraph/: Makefile.am, nmgflowlistview.cpp,
+	  nmgflowlistview.h, nmggraphicobject.cpp, nmggraphicobject.h,
+	  nmggraphicwidget.cpp, nmggraphicwidget.h, nmggraphwidget.cpp,
+	  nmggraphwidget.h, nmggraphwidgetbase.ui: [no log message]
+
+2006-03-29 23:20  enieto
+
+	* src/: gui/widgets/nmgmainwindow.cpp, plugin/libnmgmgen/nmgmgen.h,
+	  plugin/libnmgmgen/nmgmgenmainwidget.ui,
+	  plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  plugin/libnmgmgen/nmgmgenwidget.h: Update modul mgen i finestra
+	  principal
+
+2006-03-29 23:19  enieto
+
+	* debug/src/icons/: configure.png, connect_to_network.png,
+	  delete.png, edittrash.png, launch.png, mgenicon.png: mes icones
+
+2006-03-29 20:20  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgen.h, nmgmgenflow.cpp,
+	  nmgmgenmainwidget.ui, nmgmgenwidget.cpp, nmgmgenwidget.h,
+	  nmgmgenxmltags.h: Update ModulMGEN a la GUI
+
+2006-03-29 20:05  enieto
+
+	* src/plugin/: nmgimodulestationmanager.h, nmgmodule.cpp,
+	  nmgmodule.h, nmgmodulemanager.cpp, nmgmodulemanager.h,
+	  nmgmoduleparent.cpp, nmgmoduleparent.h: Update de les classes
+	  NMGModule per afegir funcionalitats
+
+2006-03-29 20:04  enieto
+
+	* src/gui/widgets/nmgmainwindow.cpp: Petita actualitzacio classes
+
+2006-03-28 23:28  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgenflow.cpp,
+	  nmgmgenflow.h, nmgmgenflowmodification.cpp,
+	  nmgmgenflowmodification.h, nmgmgenflowrsvp.cpp,
+	  nmgmgenflowrsvp.h, nmgmgenxmltags.h: Update modul MGEN (gui)
+
+2006-03-27 23:48  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgenwidget.cpp: Update
+	  MGEN Gui (Stop al tancar la interface del modul i mes coses)
+
+2006-03-27 23:47  enieto
+
+	* aclocal.m4, src/gui/nmgconnection.cpp, src/gui/nmgconnection.h,
+	  src/gui/nmgpreferencesmanager.cpp,
+	  src/gui/nmgpreferencesmanager.h,
+	  src/gui/widgets/nmgmainwindow.cpp,
+	  src/gui/widgets/nmgmainwindow.h,
+	  src/gui/widgets/nmgpreferencesbasewidget.ui: Update per a triar a
+	  quin port es conecta i altres opcions...
+
+2006-03-27 22:36  enieto
+
+	* debug/src/icons/: button_cancel.png, button_ok.png, connect.png,
+	  disconnect.png, exit.png, info.png, network.png, run.png: Noves
+	  icones
+
+2006-03-27 20:39  enieto
+
+	* src/plugin/Makefile.am: Update Makefile.am
+
+2006-03-27 20:30  enieto
+
+	* src/plugin/: nmgmoduleutils.cpp, nmgmoduleutils.h: Nova classe
+	  NMGModuleUtils
+
+2006-03-27 20:29  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgenwidget.cpp,
+	  nmgmgenwidget.h: Update modul MGEN gui
+
+2006-03-27 20:29  enieto
+
+	* src/gui/: nmgconnection.cpp, nmgconnection.h,
+	  widgets/Makefile.am, widgets/nmgmainwindow.cpp,
+	  widgets/nmgmainwindow.h: Actulaitzacio connexi√≥ per poder
+	  conetar i desconnectar
+
+2006-03-27 20:28  enieto
+
+	* src/gui/widgets/: nmgmainwindowtoolboxmodulehandler.cpp,
+	  nmgmainwindowtoolboxmodulehandler.h: Eliminem aquestes classes
+
+2006-03-27 17:16  enieto
+
+	* src/: gui/widgets/nmgmainwindow.cpp, gui/widgets/nmgmainwindow.h,
+	  plugin/libnmgexemple/nmgexemplewidget.cpp,
+	  plugin/libnmgmgen/nmgmgenwidget.cpp: Actulitzacio main window pe
+	  a que els menus dels moduls puguin compartir key accelerators
+	  (entre ells) i no es sol¬∑lapin les execucions
+
+2006-03-27 16:31  pcapella
+
+	* src/plugin/libnmgtrace/: Makefile.am, nmgtracewidget.cpp: Pau
+	  Capella <pcapella@ac.upc.edu>   Suport per progressItem gracies a
+	  les trames status
+
+2006-03-27 13:23  pcapella
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgenmainwidget.ui: Pau
+	  Capella <pcapella@ac.upc.edu>  Corregit error que donava error al
+	  compilar
+
+2006-03-27 13:07  pcapella
+
+	* aclocal.m4, configure.in, src/plugin/libnmgsnooper/Makefile.am,
+	  src/plugin/libnmgsnooper/nmgsnooperwidget.cpp,
+	  src/plugin/libnmgsnooper/nmgsnooperwidget.h: Pau Capella
+	  <pcapella@ac.upc.edu> 	Corregits errors que donaven errors
+	  al compilar
+
+2006-03-27 12:51  pcapella
+
+	* src/: nmgmain.cpp, plugin/Makefile.am: Pau Capella
+	  <pcapella@ac.upc.edu>      Afegit NMGSnooper
+
+2006-03-27 12:50  pcapella
+
+	* src/plugin/libnmgsnooper/: Makefile.am, nmgsnooper.cpp,
+	  nmgsnooper.h, nmgsnooperwidget.cpp, nmgsnooperwidget.h,
+	  nmgsnooperwidgetbase.ui: Pau Capella <pcapella@ac.upc.edu>
+	  Inici
+
+2006-03-26 23:29  enieto
+
+	* src/: gui/widgets/nmgmoduletoolboxitem.cpp, plugin/nmgmodule.h,
+	  plugin/nmgmodulefactory.cpp, plugin/nmgmoduleparent.cpp,
+	  plugin/nmgmoduleparent.h, plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgexemple/nmgexemple.h,
+	  plugin/libnmgexemple/nmgexemplewidget.cpp,
+	  plugin/libnmgexemple/nmgexemplewidget.h,
+	  plugin/libnmgexemplerequest/nmgexempleadder.h,
+	  plugin/libnmgexemplerequest/nmgexemplerequest.h,
+	  plugin/libnmgexemplesubscriptor/nmgexemplesubscripted.h,
+	  plugin/libnmgexemplesubscriptor/nmgexemplesubscriptor.h,
+	  plugin/libnmgmgen/nmgmgen.cpp, plugin/libnmgmgen/nmgmgen.h,
+	  plugin/libnmgmgen/nmgmgenflow.cpp,
+	  plugin/libnmgmgen/nmgmgenflow.h,
+	  plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  plugin/libnmgmgen/nmgmgenwidget.h: Afegits tooltips al moduls amb
+	  una nova macro de NMGModule
+
+2006-03-25 20:59  enieto
+
+	* src/: gui/nmghostinformationmanager.cpp,
+	  gui/widgets/nmghostinformationcombowidget.cpp,
+	  gui/widgets/nmghostinformationcombowidget.h,
+	  plugin/libnmgmgen/nmgmgenmainwidget.ui,
+	  plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  plugin/libnmgmgen/nmgmgenwidget.h: Actualitzacio combo-station
+	  widgets i modul MGEN
+
+2006-03-22 23:45  enieto
+
+	* src/gui/: Makefile.am, nmgimagemanager.cpp, nmgimagemanager.h:
+	  Nova classe image manager
+
+2006-03-22 23:45  enieto
+
+	* src/gui/widgets/: nmgmainwindowbase.ui, nmgmoduletoolboxitem.cpp:
+	  Update tool box item
+
+2006-03-22 23:18  enieto
+
+	* src/plugin/: libnmgexemplerequest/nmgexempleadder.h,
+	  libnmgmgen/nmgmgen.h: Actualitzacio moduls per afegir icones a
+	  cada modul
+
+2006-03-22 23:17  enieto
+
+	* src/: gui/widgets/nmgmoduletoolbox.cpp,
+	  gui/widgets/nmgmoduletoolbox.h,
+	  gui/widgets/nmgmoduletoolboxitem.cpp,
+	  gui/widgets/nmgmoduletoolboxitem.h, plugin/nmgmodule.h,
+	  plugin/nmgmodulefactory.cpp, plugin/nmgmoduleparent.cpp,
+	  plugin/nmgmoduleparent.h: Actualitzacio per poder afegir icones
+	  diferents
+
+2006-03-22 23:16  enieto
+
+	* debug/src/icons/: iconadder.png, iconmgen.png: Icones de prova
+
+2006-03-22 22:37  enieto
+
+	* src/: gui/nmgconnection.cpp, plugin/nmgmodule.cpp: Correccio bug
+	  Status (2)
+
+2006-03-22 20:29  enieto
+
+	* src/gui/: nmgconnection.cpp, nmginterpret.cpp, nmginterpret.h:
+	  Correccio bug Status
+
+2006-03-22 20:08  enieto
+
+	* src/gui/widgets/nmgmainwindow.cpp: Update classes per afegir i
+	  treure moduls per actualitzar menus i la toolbox
+
+2006-03-22 20:02  enieto
+
+	* src/gui/widgets/: nmgmoduletoolbox.cpp, nmgmainwindow.h: Update
+	  classes per afegir i treure moduls per actualitzar menus i la
+	  toolbox
+
+2006-03-22 16:08  pcapella
+
+	* src/gui/widgets/nmgmainwindow.cpp: Pau Capella
+	  <pcapella@ac.upc.edu>  Afegit el statusBarProgress a la finestra
+	  principal
+
+2006-03-21 23:27  enieto
+
+	* src/gui/widgets/: nmgmoduletoolbox.cpp, nmgmoduletoolbox.h:
+	  Corrreccio classe
+
+2006-03-21 22:58  enieto
+
+	* configure.in: Actualitzacio configure.in
+
+2006-03-21 22:57  enieto
+
+	* src/main.cpp: Actualitzacio main (neteja)
+
+2006-03-21 22:56  enieto
+
+	* src/: gui/widgets/Makefile.am,
+	  gui/widgets/nmghostinformationwidget.cpp,
+	  gui/widgets/nmgmaintabwidget.cpp, gui/widgets/nmgmainwindow.cpp,
+	  gui/widgets/nmgmainwindow.h, gui/widgets/nmgmainwindowbase.ui,
+	  gui/widgets/nmgmainwindowtoolboxmodulehandler.cpp,
+	  gui/widgets/nmgmainwindowtoolboxmodulehandler.h,
+	  gui/widgets/nmgmodulelistviewwidget.cpp,
+	  gui/widgets/nmgmoduletoolbox.cpp, gui/widgets/nmgmoduletoolbox.h,
+	  gui/widgets/nmgmoduletoolboxitem.cpp,
+	  gui/widgets/nmgmoduletoolboxitem.h,
+	  gui/nmgpreferencesmanager.cpp, nmgmain.cpp: Actualitzacio
+	  navegador moduls a finestra principal
+
+2006-03-21 22:55  enieto
+
+	* debug/src/icons/: icon.png, icontest.png: Icons de prova
+
+2006-03-21 16:46  pcapella
+
+	* src/plugin/libnmgtrace/nmgtracewidgetbase.ui: Pau Capella
+	  <pcapella@ac.upc.edu>       Corregit l'include del
+	  NMGHostInformationComboWidget
+
+2006-03-21 16:44  pcapella
+
+	* src/plugin/libnmgtrace/: nmgtracewidget.cpp, nmgtracewidget.h,
+	  nmgtracewidgetbase.ui: Pau Capella <pcapella@ac.upc.edu>
+	  Agafem el temps del hosts
+
+2006-03-20 17:12  pcapella
+
+	* debug/src/icons/: down.png, up.png: Pau Capella
+	  <pcapella@ac.upc.edu> 	Noves icones per el
+	  StatusBarProgress
+
+2006-03-20 17:02  pcapella
+
+	* src/plugin/libnmgtrace/Makefile.am: Pau Capella
+	  <pcapella@ac.upc.edu> 	Nou makefile per suportar el
+	  ProgressItem
+
+2006-03-20 17:01  pcapella
+
+	* src/plugin/libnmgtrace/: nmgtrace.cpp, nmgtrace.h: Pau Capella
+	  <pcapella@ac.upc.edu>  Afegit mËtode statusReceived
+
+2006-03-20 17:01  pcapella
+
+	* src/plugin/libnmgtrace/nmgtracewidgetbase.ui: Pau Capella
+	  <pcapella@ac.upc.edu>       Afegit widget
+	  NMGHostImformationComboWidget
+
+2006-03-20 16:59  pcapella
+
+	* src/plugin/libnmgtrace/: nmgtracewidget.cpp, nmgtracewidget.h:
+	  Pau Capella <pcapella@ac.upc.edu>	 Afegit  ProgressItem.
+	  Suport per rebre comanda Status	  Nou protocol XML
+
+2006-03-20 16:58  pcapella
+
+	* src/gui/widgets/statusbarprogress/: progressmanager.cpp,
+	  progressmanager.h: Pau Capella <pcapella@ac.upc.edu>
+	  Canvi en el mËtode static createProgressItem
+
+2006-03-19 23:46  enieto
+
+	* src/plugin/nmgmodule.cpp: [no log message]
+
+2006-03-19 23:46  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgen.cpp,
+	  nmgmgenflow.cpp, nmgmgenflow.h, nmgmgenflowextensionheader.cpp,
+	  nmgmgenflowextensionheader.h, nmgmgenflowlistitem.cpp,
+	  nmgmgenflowlistitem.h, nmgmgenflowmodification.cpp,
+	  nmgmgenflowmodification.h, nmgmgenmainwidget.ui,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h, nmgmgenxmltags.h:
+	  Actualitzacio Modul MGEN GUI
+
+2006-03-19 23:45  enieto
+
+	* src/gui/: nmgconfigurationfilemanager.cpp,
+	  nmgpreferencesmanager.cpp, nmgpreferencesmanager.h,
+	  widgets/nmgmainwindow.cpp: Actulaitzacio classes per a manegar
+	  preferencies
+
+2006-03-18 22:34  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenmainwidget.ui, nmgmgenwidget.cpp,
+	  nmgmgenwidget.h: Actualitzacio modul MGEN gui
+
+2006-03-18 22:28  enieto
+
+	* src/gui/: nmghostinformationmanager.cpp,
+	  nmghostinformationmanager.h,
+	  widgets/nmghostinformationcombowidget.cpp: Actualitzacio combo
+	  per a utilitzar el .cw correctament
+
+2006-03-16 22:41  enieto
+
+	* src/plugin/: nmgmodule.cpp, libnmgmgen/nmgmgen.cpp,
+	  libnmgmgen/nmgmgenwidget.cpp, libnmgmgen/nmgmgenwidget.h:
+	  Actualitzacio Modul MGEN GUI (ara crida al modul Oreneta per a
+	  que l'altre rebi els seus events)
+
+2006-03-16 18:33  enieto
+
+	* src/: plugin/libnmgplugintest/Makefile.in,
+	  plugin/libnmgexemple/Makefile.in,
+	  plugin/libnmgnetperf/Makefile.in, gui/Makefile.in,
+	  gui/widgets/Makefile.in, gui/widgets/widgetfromxml/Makefile.in:
+	  Borrem els Makefile.in innecessaris
+
+2006-03-16 18:31  enieto
+
+	* src/plugin/libnmgmgen/Makefile.in: Test per borrar el Makefile.in
+
+2006-03-16 18:30  enieto
+
+	* src/: gui/widgets/nmghostinformationcombowidget.cw,
+	  plugin/libnmgmgen/nmgmgenmainwidget.ui,
+	  plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  plugin/libnmgmgen/nmgmgenwidget.h: Actualitzacio CustomWidget de
+	  les estacions i classes que ho utilitzen
+
+2006-03-15 16:00  pcapella
+
+	* src/gui/widgets/nmghostinformationcombowidget.cw: Pau Capella
+	  <pcapella@ac.upc.edu>   Afegint custom widget per el
+	  NMGHostInformationComboWidget
+
+2006-03-15 13:17  pcapella
+
+	* src/gui/widgets/nmghostinformationcombowidgetbase.ui: Pau Capella
+	  <pcapella@ac.upc.edu>       Canvis en la politica de tamany dels
+	  widgets, de prefered a expanding
+
+2006-03-15 12:49  dlacort
+
+	* netmetergui.kdevelop, netmetergui.kdevelop.pcs,
+	  netmetergui.kdevses: afegit plugin libnmggraph
+
+2006-03-15 12:46  dlacort
+
+	* src/plugin/Makefile.am: afegit plugin libnmggraph
+
+2006-03-15 12:43  dlacort
+
+	* src/nmgmain.cpp: Afegit plugin libnmggraph
+
+2006-03-15 12:41  dlacort
+
+	* src/plugin/libnmggraph/: Makefile.am, nmggraph.cpp, nmggraph.h,
+	  nmggraphicobject.cpp, nmggraphicobject.h, nmggraphicwidget.cpp,
+	  nmggraphicwidget.h, nmggraphwidget.cpp, nmggraphwidget.h,
+	  nmggraphwidgetbase.ui: [no log message]
+
+2006-03-14 23:20  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgenflow.cpp, nmgmgenflow.h,
+	  nmgmgenflowmodification.cpp, nmgmgenflowmodification.h,
+	  nmgmgenwidget.cpp: Actualitzacio classes module MGEN GUI per
+	  generar xml per al core (2)
+
+2006-03-14 19:30  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgen.cpp,
+	  nmgmgenflow.cpp, nmgmgenflow.h, nmgmgenflowmodification.cpp,
+	  nmgmgenflowmodification.h, nmgmgenmainwidget.ui,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h, nmgmgenxmltags.h:
+	  Actualitzacio classes module MGEN GUI per generar xml per al core
+
+2006-03-14 19:29  enieto
+
+	* src/gui/: nmghostinformationmanager.cpp,
+	  nmghostinformationmanager.h: Actualitzacio classes
+
+2006-03-13 22:58  enieto
+
+	* src/gui/: nmghostinformationmanager.cpp,
+	  nmghostinformationmanager.h,
+	  widgets/nmghostinformationcombowidget.cpp,
+	  widgets/nmghostinformationcombowidget.h: Actualitzacio classes i
+	  widgets per actualitzar els combos al afegir noves estacions o al
+	  treure-les
+
+2006-03-13 21:24  enieto
+
+	* src/gui/widgets/Makefile.am: Actulitzacio per compilar be
+
+2006-03-13 21:24  enieto
+
+	* src/: gui/nmghostinformationmanager.cpp,
+	  gui/nmghostinformationmanager.h,
+	  plugin/nmgimodulestationmanager.h: Actulitzacio classe
+
+2006-03-13 21:02  enieto
+
+	* src/plugin/: nmgimodulestationmanager.h, nmgmodule.cpp,
+	  nmgmodule.h: Actualitzacio classes relatives als widgets per a
+	  mostrar informacio d'estacions
+
+2006-03-13 21:01  enieto
+
+	* src/plugin/libnmgmgen/: nmgmgen.cpp, nmgmgenmainwidget.ui,
+	  nmgmgenwidget.cpp, nmgmgenwidget.h: Actualitzacio modul MGEN GUI
+
+2006-03-13 21:00  enieto
+
+	* src/gui/widgets/: nmghostinformationcombowidgetbase.ui,
+	  nmghostinformationcombowidget.cpp,
+	  nmghostinformationcombowidget.h: Actualitzacio widgets per a
+	  mostrar informacio d'estacions
+
+2006-03-13 15:20  pcapella
+
+	* src/gui/widgets/statusbarprogress/: Makefile.am,
+	  overlaywidget.cpp, overlaywidget.h, progressdialog.cpp,
+	  progressdialog.h, progressmanager.cpp, progressmanager.h,
+	  statusbarprogresswidget.cpp, statusbarprogresswidget.h: Pau
+	  Capella <pcapella@ac.upc.edu>  Initial release
+
+2006-03-13 15:19  pcapella
+
+	* src/gui/widgets/: nmgmainwindow.cpp, nmgmainwindow.h: Pau Capella
+	  <pcapella@ac.upc.edu>       Afegits els objectes per el
+	  statusbarprogress
+
+2006-03-13 15:18  pcapella
+
+	* src/gui/widgets/Makefile.am: Pau Capella <pcapella@ac.upc.edu>
+	  Actialitzem el makefile per el statusbarprogress
+
+2006-03-12 19:43  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgenbandwith.cpp,
+	  nmgmgenbandwith.h, nmgmgenflow.cpp, nmgmgenflow.h,
+	  nmgmgenflowmanager.cpp, nmgmgenflowmanager.h,
+	  nmgmgenflowmodification.cpp, nmgmgenflowmodification.h,
+	  nmgmgenmainwidget.ui, nmgmgenwidget.cpp, nmgmgenwidget.h:
+	  Actualitzacio modul MGEN Gui
+
+2006-03-12 15:25  enieto
+
+	* src/: gui/widgets/nmgmainwindow.cpp, gui/widgets/nmgmainwindow.h,
+	  plugin/nmgimodulecommunication.h, plugin/nmgmodule.cpp,
+	  plugin/nmgmodule.h, plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgexemplerequest/nmgexemplerequest.h: Actualitzacio
+	  classes comunicacio entre moduls
+
+2006-03-12 13:36  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, nmgmgen.cpp, nmgmgen.h,
+	  nmgmgenflow.cpp, nmgmgenflow.h, nmgmgenflowextensionheader.cpp,
+	  nmgmgenflowextensionheader.h, nmgmgenflowlist.cpp,
+	  nmgmgenflowlist.h, nmgmgenflowmanager.cpp, nmgmgenflowmanager.h,
+	  nmgmgenmainwidget.ui, nmgmgenwidget.cpp, nmgmgenwidget.h:
+	  Actualitzacio modul MGEN Gui
+
+2006-03-09 16:06  enieto
+
+	* src/plugin/libnmgexemplerequest/Makefile.am,
+	  src/plugin/libnmgexemplerequest/nmgexempleadder.cpp,
+	  src/plugin/libnmgexemplerequest/nmgexempleadder.h,
+	  src/plugin/libnmgexemplerequest/nmgexempleadderwidget.cpp,
+	  src/plugin/libnmgexemplerequest/nmgexempleadderwidget.h,
+	  src/plugin/libnmgexemplerequest/nmgexempleadderwidgetbase.ui,
+	  src/plugin/libnmgexemplerequest/nmgexemplerequest.cpp,
+	  src/plugin/libnmgexemplerequest/nmgexemplerequest.h,
+	  src/plugin/libnmgexemplerequest/nmgexemplerequestwidget.cpp,
+	  src/plugin/libnmgexemplerequest/nmgexemplerequestwidget.h,
+	  src/plugin/libnmgexemplerequest/nmgexemplerequestwidgetbase.ui,
+	  src/plugin/Makefile.am,
+	  src/plugin/nmgmodulecommunicationmanager.cpp, src/nmgmain.cpp,
+	  configure.in: Actualitzacio classes per a gestionar les
+	  comunicacions entre moduls (p.e. Oreneta i Trace o MGEN i
+	  Oreneta): Moduls d'exemple que ilustren la utilitzacio de les
+	  classes
+
+2006-03-08 19:49  enieto
+
+	* src/gui/nmginterpret.cpp, src/gui/widgets/nmgmainwindow.cpp,
+	  src/gui/widgets/nmgmainwindow.h,
+	  src/plugin/libnmgexemplesubscriptor/Makefile.am,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscripted.cpp,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscripted.h,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscriptedwidget.cpp,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscriptedwidget.h,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscriptedwidgetbase.ui,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscriptor.cpp,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscriptor.h,
+	  src/plugin/libnmgexemplesubscriptor/nmgexemplesubscriptorwidgetbase.ui,
+	  src/nmgmain.cpp, src/plugin/Makefile.am,
+	  src/plugin/nmgimodulecommunication.h, src/plugin/nmgmodule.cpp,
+	  src/plugin/nmgmodule.h,
+	  src/plugin/nmgmodulecommunicationmanager.cpp,
+	  src/plugin/nmgmodulecommunicationmanager.h, configure.in:
+	  Actualitzacio classes per a gestionar les comunicacions entre
+	  moduls (p.e. Oreneta i Trace o MGEN i Oreneta)
+
+2006-03-08 00:01  enieto
+
+	* src/plugin/: nmgmodule.cpp, nmgmodule.h,
+	  nmgmodulecommunicationmanager.cpp,
+	  nmgmodulecommunicationmanager.h, nmgmoduleinstancemanager.h,
+	  nmgmodulemanager.cpp, nmgmodulemanager.h,
+	  nmgmodulesubscriptionlist.cpp, nmgmodulesubscriptionlist.h:
+	  Actualitzacio classes per a gestionar les comunicacions entre
+	  moduls (p.e. Oreneta i Trace o MGEN i Oreneta)
+
+2006-03-07 19:36  enieto
+
+	* src/plugin/: Makefile.am, nmgmodule.cpp, nmgmodule.h,
+	  nmgmodulecommunicationmanager.cpp,
+	  nmgmodulecommunicationmanager.h, nmgmoduleinstancemanager.cpp,
+	  nmgmoduleinstancemanager.h, nmgmodulesubscriptionlist.cpp,
+	  nmgmodulesubscriptionlist.h: Actualitzacio classes (i algunes
+	  classes noves) per a gestionar les comunicacions entre moduls
+
+2006-03-07 19:35  enieto
+
+	* src/gui/: nmgconnection.cpp, nmgconnection.h, nmgutil.h:
+	  Actualitzacio classes per a gestionar correctament els deasttach
+	  i quit del servidor
+
+2006-03-07 19:33  enieto
+
+	* src/gui/widgets/: nmgmainwindow.cpp, nmgmainwindow.h,
+	  nmgmodulelistviewwidget.cpp, nmgmodulelistviewwidget.h:
+	  Actulaitzacio main window amb menus de modules
+
+2006-03-06 23:06  enieto
+
+	* src/: nmgmain.cpp, gui/nmgconnection.cpp, gui/nmgconnection.h,
+	  gui/nmgmessagecenter.cpp, gui/widgets/nmgmainwindow.cpp,
+	  gui/widgets/nmgmainwindow.h, plugin/nmgmodule.cpp,
+	  plugin/nmgmodule.h, plugin/nmgmodulemanager.cpp,
+	  plugin/nmgmodulemanager.h: Actualitzacio classes per a reber
+	  correctament les dades a dataReceived i poder executar
+	  errorReceived i statusReceived.
+
+2006-03-06 23:05  enieto
+
+	* src/gui/widgets/: nmgmodulelistviewwidget.cpp,
+	  nmgmodulelistviewwidget.h: Per tractar la creacio dels modules
+	  amb un click
+
+2006-03-06 15:34  enieto
+
+	* src/: nmgmain.cpp, nmgmain.h, gui/Makefile.am,
+	  gui/widgets/nmgmainwindow.cpp, gui/widgets/nmgmainwindow.h,
+	  gui/widgets/nmgmodulelistviewwidget.cpp,
+	  gui/widgets/nmgpreferencesbasewidget.ui: Actualitzacio classes
+	  per registrar les preferencies
+
+2006-03-05 23:44  enieto
+
+	* src/gui/: nmgpreferencesmanager.cpp, nmgpreferencesmanager.h:
+	  Actualitzacio classes per registrar les preferencies
+
+2006-03-05 23:02  enieto
+
+	* src/: gui/widgets/nmgmodulelistviewwidget.cpp,
+	  plugin/nmgmodulemanager.cpp: Actualitzacio classes per a poder
+	  carregar i descarregar moduls de manera dinamica, afegin
+	  funcionalitats amb el buto dret a la llista de modules
+
+2006-03-05 20:15  enieto
+
+	* src/gui/widgets/nmgmodulelistviewwidget.cpp: Actualitzacio
+	  classes per a poder carregar i descarregar moduls de manera
+	  dinamica, afegin funcionalitats amb el buto dret a la llista de
+	  modules
+
+2006-03-05 20:11  enieto
+
+	* src/plugin/: nmgmodule.cpp, nmgmodulefactory.cpp,
+	  nmgmodulemanager.cpp: Actualitzacio classes per a poder carregar
+	  i descrregar moduls de manera dinamica, afegin funcionalitats amb
+	  el buto dret a la llista de modules
+
+2006-03-05 19:49  enieto
+
+	* src/: core/nmmodulefactory.h, gui/widgets/nmgmainwindow.cpp,
+	  gui/widgets/nmgmainwindow.h,
+	  gui/widgets/nmgmodulelistviewitem.cpp,
+	  gui/widgets/nmgmodulelistviewitem.h,
+	  gui/widgets/nmgmodulelistviewwidget.cpp,
+	  gui/widgets/nmgmodulelistviewwidget.h,
+	  plugin/nmgmodulefactory.cpp, plugin/nmgmodulefactory.h,
+	  plugin/nmgmodulemanager.cpp, plugin/nmgmodulemanager.h:
+	  Actualitzacio classes per a poder carregar i descrregar moduls de
+	  manera dinamica, afegin funcionalitats amb el buto dret a la
+	  llista de modules
+
+2006-03-04 10:57  jrbenet
+
+	* src/gui/Makefile.am: jrbenet: actualitzat per addici√≥ del batch
+	  processing
+
+2006-03-04 10:54  jrbenet
+
+	* src/gui/nmgbatchprocessing/: Makefile.am,
+	  nmgbatchprocesswidget.cpp, nmgbatchprocesswidget.h,
+	  nmgbatchprocesswidgetbase.ui, nmgbatchtask.cpp, nmgbatchtask.h:
+	  jrbenet: batch processing
+
+2006-03-02 23:56  enieto
+
+	* src/gui/: nmgconfigurationfile.h,
+	  nmgpreferencesconfigurationfile.cpp,
+	  nmgpreferencesconfigurationfile.h, widgets/Makefile.am,
+	  widgets/nmgpreferencesbasewidget.ui, Makefile.am: Creaci√≥ de
+	  classes per a manegar les preferencies de l'aplicacio
+
+2006-03-02 19:02  enieto
+
+	* src/: gui/nmghost.cpp, gui/nmghostinformationmanager.cpp,
+	  gui/nmgmodulefieldslist.cpp, gui/nmgmodulefieldslist.h,
+	  gui/nmgmodulefieldsmanager.cpp, gui/nmgmodulefieldsmanager.h,
+	  gui/nmgstation.cpp, gui/nmgstation.h,
+	  gui/widgets/nmghostinformationwidget.cpp, plugin/nmgmodule.cpp,
+	  plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgmgen/nmgmgen.cpp: Actualitzacio Host Information
+	  Widget i classes relacionades per la informacio d'estacions
+
+2006-03-02 00:12  enieto
+
+	* src/: gui/nmghostinformationmanager.cpp,
+	  gui/nmghostinformationmanager.h, gui/nmgstation.cpp,
+	  gui/nmgstation.h, gui/nmgstationfield.cpp, gui/nmgstationfield.h,
+	  gui/nmgstationfieldsmanager.cpp, gui/nmgstationfieldsmanager.h,
+	  gui/widgets/nmghostinformationwidget.cpp,
+	  gui/widgets/nmghostinformationwidget.h,
+	  plugin/nmgimodulestationmanager.h, plugin/nmgmodule.cpp,
+	  plugin/nmgmodule.h, plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgmgen/nmgmgen.cpp: Actualitzacio Host Information
+	  Widget i classes relacionades per la informacio d'estacions
+
+2006-03-01 13:03  pcapella
+
+	* src/plugin/: libnmgtrace/nmgtracewidgetbase.ui,
+	  libnmgoreneta/nmgorenetawidgetbase.ui: Pau Capella
+	  <pcapella@ac.upc.edu>      resizeMode = AllColumns
+
+2006-03-01 13:02  pcapella
+
+	* src/nmgmain.cpp: Pau Capella <pcapella@ac.upc.edu>	Afegida la
+	  carrega del plugin Trace
+
+2006-03-01 12:52  pcapella
+
+	* src/plugin/libnmgoreneta/: nmgorenetawidget.cpp,
+	  nmgorenetawidgetbase.ui: Pau Capella <pcapella@ac.upc.edu>
+	  Afegides millores en la interficie
+
+2006-03-01 12:50  pcapella
+
+	* src/plugin/libnmgtrace/: nmgtrace.cpp, nmgtrace.h: Pau Capella
+	  <pcapella@ac.upc.edu>  Initial Release
+
+2006-03-01 12:50  pcapella
+
+	* src/plugin/libnmgtrace/: hostlistviewitem.cpp,
+	  hostlistviewitem.h, nmgtracewidget.cpp, nmgtracewidget.h,
+	  nmgtracewidgetbase.ui: Pau Capella <pcapella@ac.upc.edu>
+	  Initial release
+
+2006-03-01 12:49  pcapella
+
+	* src/plugin/libnmgtrace/: Makefile.am, Makefile.in: Pau Capella
+	  <pcapella@ac.upc.edu>  ActualitzaciÛ del Makefile
+
+2006-03-01 00:18  enieto
+
+	* src/gui/: nmgconfigurationfilemanager.cpp,
+	  nmghostinformationmanager.cpp, nmghostinformationmanager.h,
+	  nmgstation.cpp, nmgstation.h,
+	  widgets/nmghostinformationwidget.cpp,
+	  widgets/nmghostinformationwidget.h: Actualitzacio Host
+	  Information Widget i classes relacionades per la informacio
+	  d'estacions
+
+2006-02-28 19:31  enieto
+
+	* src/: nmgmain.cpp, nmgmain.h, gui/Makefile.am,
+	  gui/nmgconfigurationfilefactory.cpp,
+	  gui/nmgconfigurationfilemanager.cpp,
+	  gui/nmgconfigurationfilemanager.h,
+	  gui/nmghostinformationmanager.cpp,
+	  gui/nmghostinformationmanager.h, gui/nmgmodulefieldsmanager.cpp,
+	  gui/nmgstation.cpp, gui/nmgstation.h, gui/nmgstationfield.cpp,
+	  gui/nmgstationfield.h, gui/nmgstationfieldsmanager.cpp,
+	  gui/nmgstationfieldsmanager.h, gui/nmgxmlconfigurationfile.cpp,
+	  gui/nmgxmlconfigurationfile.h: Actualitzacio Host Information
+	  Widget i classes relacionades per la informacio d'estacions
+
+2006-02-28 19:30  enieto
+
+	* src/gui/widgets/: nmghostinformationmainwidget.ui,
+	  nmghostinformationwidget.cpp, nmghostinformationwidget.h:
+	  Actualitzacio Host Information Widget
+
+2006-02-28 00:07  enieto
+
+	* src/: gui/nmgconnection.cpp, gui/nmginterpret.cpp,
+	  gui/widgets/nmgmainwindow.cpp,
+	  plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgexemple/nmgexemple.h: Actualitzacio classes per
+	  comentaris amb Pau 27/febrer
+
+2006-02-26 23:44  enieto
+
+	* src/: gui/Makefile.am, gui/Makefile.in, gui/nmghost.cpp,
+	  gui/nmghost.h, gui/nmghostinformationmanager.cpp,
+	  gui/nmgstation.cpp, gui/nmgstation.h,
+	  gui/widgets/nmghostinformationmainwidget.ui,
+	  gui/widgets/nmghostinformationwidget.cpp,
+	  gui/widgets/nmghostinformationwidget.h,
+	  gui/widgets/nmgmainwindow.h, plugin/nmgmodule.cpp,
+	  plugin/nmgmodule.h, plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgexemple/nmgexemple.h: Actualitzacio Host Information
+	  Widget
+
+2006-02-26 17:42  enieto
+
+	* src/: gui/nmghostinformationmanager.cpp,
+	  gui/nmghostinformationmanager.h, gui/nmgmodulefieldsmanager.cpp,
+	  gui/nmgmodulefieldsmanager.h,
+	  gui/widgets/nmghostinformationmainwidget.ui,
+	  gui/widgets/nmghostinformationwidget.cpp,
+	  gui/widgets/nmghostinformationwidget.h,
+	  gui/widgets/nmgmainwindow.cpp,
+	  plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgexemple/nmgexemple.h, gui/Makefile.in: Actualitzacio
+	  Host Information Widget
+
+2006-02-24 10:36  pcapella
+
+	* src/plugin/Makefile.in, Makefile.in, configure: Pau Capella
+	  <pcapella@ac.upc.edu>     Makefile.in Ès autogenerat
+
+2006-02-24 10:33  pcapella
+
+	* src/: Makefile.in, core/Makefile.in, gui/Makefile.in: Pau Capella
+	  <pcapella@ac.upc.edu>       Makefile.in Ès autogenerat
+
+2006-02-23 23:00  enieto
+
+	* src/plugin/libnmgexemple/: nmgexemple.cpp, nmgexemplewidget.cpp,
+	  nmgexemplewidget.h: Actualitzacio modul Exemple GUI
+
+2006-02-23 22:59  enieto
+
+	* src/plugin/libnmgmgen/: Makefile.am, Makefile.in, nmgmgen.cpp,
+	  nmgmgen.h, nmgmgenmainwidget.ui: Actualitzacio modul MGEN GUI
+
+2006-02-23 22:58  enieto
+
+	* src/gui/: Makefile.in, nmghostinformationmanager.cpp,
+	  nmghostinformationmanager.h, nmgmodulefieldslist.cpp,
+	  nmgmodulefieldslist.h, nmgmodulefieldsmanager.cpp,
+	  nmgmodulefieldsmanager.h: Actualitzacio classes referents a
+	  informacio dels hosts
+
+2006-02-23 22:57  enieto
+
+	* src/gui/widgets/: Makefile.am, Makefile.in,
+	  nmghostinformationmainwidget.ui, nmghostinformationwidget.cpp,
+	  nmghostinformationwidget.h: Actualitzacio classes per a manegar
+	  la informacio dels hosts dels respectius moduls
+
+2006-02-23 00:23  enieto
+
+	* src/: gui/nmgconnection.cpp, gui/nmgconnection.h,
+	  core/Makefile.am, core/Makefile.in, core/nmbuffer.h,
+	  core/nmerror.cpp, core/nmerror.h, core/nmevent.cpp: Actulizacio
+	  NMGConnection de la GUI per corregir error al tancar bruscament
+	  la finestra del core
+
+2006-02-23 00:22  enieto
+
+	* src/core/: nmevent.h, nmeventmanager.cpp, nmexternal.cpp,
+	  nmexternal.h, nmexternallocal.cpp, nmexternallocal.h,
+	  nmexternalremote.cpp, nmexternalremote.h, nmfile.cpp, nmfile.h,
+	  nmhost.cpp, nminterface.cpp, nminterface.h, nminterpret.cpp,
+	  nminterpret.h, nmmodule.cpp, nmmodule.h, nmmodulefactory.cpp,
+	  nmmodulefactory.h, nmmoduleinterface.cpp, nmmoduleinterface.h,
+	  nmmodulemanager.cpp, nmmodulemanager.h, nmparent.cpp, nmparent.h,
+	  nmserversocket.cpp, nmserversocket.h, nmsocket.cpp, nmsocket.h,
+	  nmsocketremote.cpp, nmsocketremote.h, nmstation.cpp, nmstation.h,
+	  nmstring.cpp, nmstring.h, nmtask.cpp, nmtask.h, nmtaskclean.cpp,
+	  nmtaskclean.h, nmtaskcompleted.cpp, nmtaskcompleted.h,
+	  nmtaskdirty.cpp, nmtaskdirty.h, nmtaskmanager.cpp,
+	  nmtaskmanager.h, nmtaskstatus.cpp, nmtaskstatus.h, nmthread.cpp,
+	  nmtimer.cpp, nmtimer.h, nmxml.cpp, nmxml.h: Actualitzacio GUI amb
+	  noves classes del core (extretes del cve netmeter)
+
+2006-02-21 23:44  enieto
+
+	* src/core/: nmmodule.cpp, nmmodule.h, nmmodulefactory.cpp,
+	  nmmodulefactory.h, nmmoduleinterface.h, nmmodulemanager.cpp,
+	  nmmodulemanager.h: Actualitzacio part del Core per a que la GUI
+	  pugui executar diverses instancies d'un mateix plugin
+
+2006-02-21 23:42  enieto
+
+	* src/: gui/widgets/nmgmodulelistviewwidget.cpp,
+	  plugin/Makefile.am, plugin/Makefile.in, plugin/nmgmodule.h,
+	  plugin/nmgmodulefactory.cpp, plugin/nmgmodulefactory.h,
+	  plugin/nmgmodulemanager.cpp, plugin/nmgmodulemanager.h,
+	  plugin/nmgmoduleparent.cpp, plugin/nmgmoduleparent.h,
+	  plugin/nmgmoduleregister.cpp, plugin/nmgmoduleregister.h,
+	  plugin/nmwidgetfactory.cpp, nmgmain.cpp, nmgmain.h: Actualitzacio
+	  GUI per a poder executar diverses instancies d'un mateix plugin
+
+2006-02-21 17:01  pcapella
+
+	* src/plugin/libnmgoreneta/Makefile.am: Pau Capella
+	  <pcapella@ac.upc.edu>       Afegits els fitxer
+	  meterlistviewitem.h i meterlistviewitem.cpp
+
+2006-02-21 16:59  pcapella
+
+	* src/plugin/libnmgoreneta/nmgorenetawidget.cpp: Pau Capella
+	  <pcapella@ac.upc.edu>      Suporta colors en la llista de Meters
+
+2006-02-21 16:59  pcapella
+
+	* src/plugin/libnmgoreneta/: meterlistviewitem.cpp,
+	  meterlistviewitem.h: Pau Capella <pcapella@ac.upc.edu>
+	  Afegida class MeterListViewItem que permet afegir colors a la
+	  llista de Meters
+
+2006-02-21 13:31  pcapella
+
+	* debug/src/icons/: in.png, inout.png, no.png, ok.png, out.png: Pau
+	  Capella <pcapella@ac.upc.edu>       Noves icones per oreneta
+
+2006-02-21 13:30  pcapella
+
+	* src/plugin/libnmgoreneta/: nmgoreneta.cpp, nmgoreneta.h,
+	  nmgorenetawidget.cpp, nmgorenetawidget.h,
+	  nmgorenetawidgetbase.ui: Pau Capella <pcapella@ac.upc.edu>
+	  Nou constructor per el Widget, ara hem d'indicar quin Ès el host
+	  origen i destÌ del test.
+
+2006-02-20 20:25  enieto
+
+	* src/plugin/libnmgexemple/nmgexemple.cpp: Actualitzacio plugin
+	  d'exemple
+
+2006-02-20 19:44  enieto
+
+	* src/: nmgmain.cpp, nmgmain.h, gui/nmgconnection.cpp,
+	  gui/nmgconnection.h, gui/widgets/nmgmainwindow.cpp,
+	  gui/widgets/nmgmainwindow.h,
+	  gui/widgets/nmgmodulelistviewwidget.cpp,
+	  gui/widgets/nmgmodulelistviewwidget.h,
+	  gui/widgets/widgetfromxml/nmgwidgetfromxmlaction.cpp,
+	  plugin/nmgmodule.cpp, plugin/nmgmodule.h,
+	  plugin/nmgmoduleinstancemanager.cpp, plugin/nmgmodulemanager.cpp,
+	  plugin/libnmgexemple/nmgexemple.cpp,
+	  plugin/libnmgexemple/nmgexemple.h, plugin/libnmgmgen/nmgmgen.cpp,
+	  plugin/libnmgmgen/nmgmgen.h: Actualitzacio GUI per a poder
+	  executar diverses instancies d'un mateix plugin
+
+2006-02-20 19:43  enieto
+
+	* src/core/: Makefile.in, nmmodule.cpp, nmmodule.h,
+	  nmmodulefactory.cpp, nmmoduleinterface.h: Actualitzacio part del
+	  Core per a que la GUI pugui executar diverses instancies d'un
+	  mateix plugin
+
+2006-02-20 00:41  enieto
+
+	* src/: gui/Makefile.in, gui/widgets/Makefile.am,
+	  gui/widgets/Makefile.in, gui/widgets/nmgmaintabbar.cpp,
+	  gui/widgets/nmgmaintabbar.h, gui/widgets/nmgmaintabwidget.cpp,
+	  gui/widgets/nmgmaintabwidget.h, gui/widgets/nmgmainwindow.cpp,
+	  gui/widgets/nmgmainwindow.h,
+	  gui/widgets/nmgmodulecontainerwidget.cpp,
+	  gui/widgets/nmgmodulelistviewitem.cpp,
+	  gui/widgets/nmgmodulelistviewwidget.cpp,
+	  gui/widgets/nmgmodulelistviewwidget.h, nmgmain.cpp,
+	  plugin/Makefile.am, plugin/Makefile.in,
+	  plugin/nmgmoduleinstancemanager.cpp,
+	  plugin/nmgmoduleinstancemanager.h, plugin/nmgmodulemanager.cpp,
+	  plugin/nmgmodulemanager.h: Actualitzacio GUI per a poder executar
+	  diverses instancies d'un mateix plugin
+
+2006-02-18 18:30  enieto
+
+	* src/gui/nmgconnection.cpp: Actualitzacio classe NMGConnection
+
+2006-02-17 18:27  pcapella
+
+	* src/gui/: nmgconnection.cpp, nmgconnection.h: Pau Capella
+	  <pcapella@ac.upc.edu>       - Solucionat problema en la connexiÛ
+	  amb el server, que feia pujar el consum de processador.
+
+2006-02-17 18:21  pcapella
+
+	* src/plugin/libnmgoreneta/: nmgorenetawidget.cpp,
+	  nmgorenetawidget.h, nmgorenetawidgetbase.ui: Pau Capella
+	  <pcapella@ac.upc.edu>       -Afegits la direcciÛ en la llista de
+	  meters i en el menu
+
+2006-02-17 10:43  pcapella
+
+	* src/: nmgmain.cpp, plugin/Makefile.am,
+	  plugin/libnmgoreneta/Makefile.am,
+	  plugin/libnmgoreneta/nmgoreneta.cpp,
+	  plugin/libnmgoreneta/nmgoreneta.h,
+	  plugin/libnmgoreneta/nmgorenetawidget.cpp,
+	  plugin/libnmgoreneta/nmgorenetawidget.h,
+	  plugin/libnmgoreneta/nmgorenetawidgetbase.ui: Pau Capella
+	  <pcapella@ac.upc.edu>  Initial branch libnmgoreneta
+
+2006-02-16 09:40  jrbenet
+
+	* src/plugin/: Makefile.am, Makefile.in: jrbenet: agregats els
+	  paths al plugin del netperf.
+
+2006-02-16 09:39  jrbenet
+
+	* src/nmgmain.cpp: jrbenet: agregades les l√≠nies de codi que
+	  carreguen el plugin del netperf.
+
+2006-02-15 16:00  enieto
+
+	* src/gui/widgets/: nmgmainwindow.cpp, nmgmainwindow.h:
+	  Actualitzacio finestra principal de la GUI
+
+2006-02-14 23:30  enieto
+
+	* src/gui/: Makefile.in, nmgconfigurationfile.h: Actualitzacio
+	  classes per a manegar la informacio dels hosts dels respectius
+	  moduls
+
+2006-02-14 20:02  jrbenet
+
+	* Doxyfile, Makefile.in, netmetergui.kdevelop,
+	  netmetergui.kdevelop.pcs, netmetergui.kdevses, admin/am_edit,
+	  debug/src/gui/widgets/test.cpp, debug/src/gui/widgets/test.h,
+	  debug/src/gui/widgets/test.moc, src/Makefile.in, src/main.cpp,
+	  src/gui/Makefile.am, src/gui/Makefile.in,
+	  src/gui/nmgconfigurationfile.cpp, src/gui/nmgconfigurationfile.h,
+	  src/gui/nmgconfigurationfilefactory.cpp,
+	  src/gui/nmgconfigurationfilefactory.h,
+	  src/gui/nmgconfigurationfilemanager.cpp,
+	  src/gui/nmgconfigurationfilemanager.h, src/gui/nmgconnection.cpp,
+	  src/gui/nmgconnection.h, src/gui/nmghostinformation.cpp,
+	  src/gui/nmghostinformation.h,
+	  src/gui/nmghostinformationmanager.cpp,
+	  src/gui/nmghostinformationmanager.h, src/gui/nmginterpret.cpp,
+	  src/gui/nmginterpret.h, src/gui/nmgmessagecenter.cpp,
+	  src/gui/nmgmessagecenter.h, src/gui/nmgmodulefieldslist.cpp,
+	  src/gui/nmgmodulefieldslist.h,
+	  src/gui/nmgmodulefieldsmanager.cpp,
+	  src/gui/nmgmodulefieldsmanager.h,
+	  src/gui/nmgplaintextconfigurationfile.cpp,
+	  src/gui/nmgplaintextconfigurationfile.h, src/gui/nmgutil.h,
+	  src/gui/nmgxmlconfigurationfile.cpp,
+	  src/gui/nmgxmlconfigurationfile.h, src/gui/widgets/Makefile.am,
+	  src/gui/widgets/Makefile.in,
+	  src/gui/widgets/nmghostinformationwidget.cpp,
+	  src/gui/widgets/nmghostinformationwidget.h,
+	  src/gui/widgets/nmgmainoptionswidget.cpp,
+	  src/gui/widgets/nmgmainoptionswidget.h,
+	  src/gui/widgets/nmgmainwindow.cpp,
+	  src/gui/widgets/nmgmainwindow.h,
+	  src/gui/widgets/nmgtaskprogressbar.cpp,
+	  src/gui/widgets/nmgtaskprogressbar.h,
+	  src/gui/widgets/widgetfromxml/Makefile.in,
+	  src/plugin/Makefile.in, src/plugin/libnmgexemple/Makefile.in,
+	  src/plugin/libnmgmgen/Makefile.in,
+	  src/plugin/libnmgmgen/nmgmgen.cpp,
+	  src/plugin/libnmgnetperf/Makefile.am,
+	  src/plugin/libnmgnetperf/Makefile.in,
+	  src/plugin/libnmgnetperf/nmgnetperf.cpp,
+	  src/plugin/libnmgnetperf/nmgnetperf.h,
+	  src/plugin/libnmgnetperf/nmgnetperfwidget.ui,
+	  src/plugin/libnmgnetperf/nmgnetperfwidgetimpl.cpp,
+	  src/plugin/libnmgnetperf/nmgnetperfwidgetimpl.h,
+	  src/plugin/libnmgplugintest/Makefile.in,
+	  src/plugin/libnmgtrace/Makefile.in,
+	  src/plugin/libnmgtrace/nmgtrace.h: [no log message]
+
+2006-02-14 19:56  enieto
+
+	* src/gui/: Makefile.am, Makefile.in,
+	  nmgconfigurationfilefactory.cpp, nmgconfigurationfilemanager.cpp,
+	  nmgconfigurationfilemanager.h, nmghostinformationmanager.cpp,
+	  nmghostinformationmanager.h, nmgmodulefieldsmanager.cpp,
+	  nmgmodulefieldsmanager.h, nmgplaintextconfigurationfile.cpp,
+	  nmgplaintextconfigurationfile.h, nmgxmlconfigurationfile.cpp,
+	  nmgxmlconfigurationfile.h, widgets/nmghostinformationwidget.cpp,
+	  widgets/nmghostinformationwidget.h,
+	  widgets/nmgmainoptionswidget.cpp: Actualitzacio classes per a
+	  manegar la informaci√≥s dels hosts dels respectius moduls
+
+2006-02-14 19:48  jrbenet
+
+	* src/plugin/libnmgnetperf/: Makefile.am, Makefile.in,
+	  nmgnetperf.cpp, nmgnetperf.h, nmgnetperfwidget.ui,
+	  nmgnetperfwidgetimpl.cpp, nmgnetperfwidgetimpl.h: jrbenet: Plugin
+	  del Netperf
+
+2006-02-13 23:44  enieto
+
+	* src/gui/: nmgconfigurationfile.cpp, nmgconfigurationfile.h,
+	  nmgconfigurationfilefactory.cpp, nmgconfigurationfilefactory.h,
+	  nmgconfigurationfilemanager.cpp, nmgconfigurationfilemanager.h,
+	  nmghostinformationmanager.cpp, nmghostinformationmanager.h,
+	  nmgmodulefieldslist.cpp, nmgmodulefieldslist.h,
+	  nmgmodulefieldsmanager.cpp, nmgmodulefieldsmanager.h,
+	  nmgplaintextconfigurationfile.cpp,
+	  nmgplaintextconfigurationfile.h, nmgxmlconfigurationfile.cpp,
+	  nmgxmlconfigurationfile.h, Makefile.am: Classes per a manegar la
+	  informaci√≥s dels hosts dels respectius moduls
+
+2006-02-13 19:27  enieto
+
+	* src/gui/: nmghostinformation.cpp, nmghostinformation.h,
+	  nmghostinformationmanager.cpp, nmghostinformationmanager.h:
+	  Classes per a manegar la informaci√≥s dels hosts dels respectius
+	  moduls
+
+2006-02-13 13:06  dlacort
+
+	* src/core/: nmstring.cpp, nmstring.h: Modificat mail de contacte
+
+2006-02-13 00:19  enieto
+
+	* src/: gui/widgets/Makefile.am, gui/widgets/Makefile.in, main.cpp:
+	  Ampliacio GUI amb widgets per a indicar opcions i mostrat paths
+	  dels hosts
+
+2006-02-12 20:06  enieto
+
+	* src/gui/widgets/: nmgmainwindow.cpp, nmgmainwindow.h,
+	  nmghostinformationwidget.cpp, nmghostinformationwidget.h,
+	  nmgmainoptionswidget.cpp, nmgmainoptionswidget.h: Ampliacio GUI
+	  amb widgets per a indicar opcions i mostrat paths dels hosts
+
+2006-02-12 20:06  enieto
+
+	* src/gui/nmginterpret.cpp: Actualitzacio GUI amb protocol nou
+
+2006-02-12 14:25  enieto
+
+	* src/: gui/nmgconnection.cpp, gui/nmgconnection.h,
+	  gui/nmginterpret.cpp, gui/nmginterpret.h, gui/nmgutil.h,
+	  plugin/libnmgtrace/nmgtrace.h: Actualitzacio GUI amb protocol nou
+
+2006-02-10 00:18  enieto
+
+	* src/gui/nmginterpret.cpp: Correccio bugs al enviar missatges XML
+	  al core per al cas d'utilitzar el send del WidgetFromXML
+
+2006-02-09 20:26  enieto
+
+	* src/gui/: nmgconnection.cpp, nmginterpret.cpp, nmginterpret.h,
+	  nmgmessagecenter.cpp, nmgmessagecenter.h, nmgutil.h,
+	  widgets/nmgtaskprogressbar.cpp, widgets/nmgtaskprogressbar.h:
+	  Actualitzacio GUi amb protocol nou
+
+2006-02-06 20:21  enieto
+
+	* src/plugin/libnmgmgen/nmgmgen.cpp: Actualizaci√≥ modul MGEN GUI
+
+2006-02-06 18:29  enieto
+
+	* Doxyfile, Makefile.in, netmetergui.kdevelop,
+	  netmetergui.kdevelop.pcs, netmetergui.kdevses: Actualizaci√≥
+	  modul MGEN GUI
+
+2006-02-03 11:37  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmbuffer.cpp, nmbuffer.h,
+	  nmdns.cpp, nmdns.h, nmentity.cpp, nmentity.h, nmerror.cpp,
+	  nmerror.h, nmevent.cpp, nmevent.h, nmeventcb.cpp, nmeventcb.h,
+	  nmeventfd.cpp, nmeventfd.h, nmeventmanager.cpp, nmeventmanager.h,
+	  nmexternal.cpp, nmexternal.h, nmexternallocal.cpp,
+	  nmexternallocal.h, nmexternalremote.cpp, nmexternalremote.h,
+	  nmfile.cpp, nmfile.h, nmhost.cpp, nmhost.h, nminterface.cpp,
+	  nminterface.h, nminterpret.cpp, nminterpret.h, nmlist.cpp,
+	  nmlist.h, nmmodule.cpp, nmmodule.h, nmmodulefactory.cpp,
+	  nmmodulefactory.h, nmmoduleinterface.cpp, nmmoduleinterface.h,
+	  nmmodulemanager.cpp, nmmodulemanager.h, nmmutex.cpp, nmmutex.h,
+	  nmparent.cpp, nmparent.h, nmsocket.cpp, nmsocket.h,
+	  nmsocketremote.cpp, nmsocketremote.h, nmstring.cpp, nmstring.h,
+	  nmtask.cpp, nmtask.h, nmtaskmanager.cpp, nmtaskmanager.h,
+	  nmthread.cpp, nmthread.h, nmtimer.cpp, nmtimer.h, nmxml.cpp,
+	  nmxml.h: pcapella: Add core for netmetergui
+
+2006-02-03 11:27  pcapella
+
+	* AUTHORS, COPYING, ChangeLog, Doxyfile, INSTALL, Makefile.am,
+	  Makefile.cvs, Makefile.in, NEWS, README, TODO, acinclude.m4,
+	  aclocal.m4, config.h.in, configure, configure.files,
+	  configure.in, configure.in.in, netmetergui.kdevelop,
+	  netmetergui.kdevelop.pcs, netmetergui.kdevses, stamp-h.in,
+	  subdirs, admin/ChangeLog, admin/Doxyfile.am,
+	  admin/Doxyfile.global, admin/Makefile.common,
+	  admin/acinclude.m4.in, admin/am_edit, admin/bcheck.pl,
+	  admin/compile, admin/conf.change.pl, admin/config.guess,
+	  admin/config.pl, admin/config.sub, admin/configure.in.bot.end,
+	  admin/configure.in.min, admin/cvs-clean.pl, admin/cvs.sh,
+	  admin/debianrules, admin/depcomp, admin/detect-autoconf.sh,
+	  admin/install-sh, admin/libtool.m4.in, admin/ltmain.sh,
+	  admin/missing, admin/mkinstalldirs, admin/nmcheck, admin/ylwrap,
+	  autom4te.cache/output.0, autom4te.cache/requests,
+	  autom4te.cache/traces.0, debug/src/netmetergui.tag,
+	  debug/src/outnetmetergui, debug/src/conf/Makefile,
+	  debug/src/conf/mgen.editflow.xml,
+	  debug/src/conf/mgen.modifyflow.xml,
+	  debug/src/conf/netmetergui.xml,
+	  debug/src/conf/nmgplugintest.wconf.xml,
+	  debug/src/conf/nmgtrace.wconf.xml,
+	  debug/src/conf/icons/editflow.png,
+	  debug/src/conf/icons/netmeter.png,
+	  debug/src/conf/icons/newflow.png, debug/src/gui/widgets/test.cpp,
+	  debug/src/gui/widgets/test.h, debug/src/gui/widgets/test.moc,
+	  debug/src/icons/folder.png, debug/src/icons/graphic.png,
+	  debug/src/icons/module.png, debug/src/icons/test.png,
+	  src/Makefile.am, src/Makefile.in, src/main.cpp,
+	  src/netmetergui.lsm, src/nmgmain.cpp, src/nmgmain.h,
+	  src/nmgwidgetmoduleinterface.h, src/conf/Makefile,
+	  src/conf/nmgplugintest.wconf.xml, src/conf/nmgtrace.wconf.xml,
+	  src/gui/Makefile.am, src/gui/Makefile.in,
+	  src/gui/nmgapplicationinformation.cpp,
+	  src/gui/nmgapplicationinformation.h, src/gui/nmgconnection.cpp,
+	  src/gui/nmgconnection.h, src/gui/nmginterpret.cpp,
+	  src/gui/nmginterpret.h, src/gui/nmgmessagecenter.cpp,
+	  src/gui/nmgmessagecenter.h, src/gui/nmgobservableinterface.h,
+	  src/gui/nmgobserverinterface.h, src/gui/nmgrandomgenerator.cpp,
+	  src/gui/nmgrandomgenerator.h, src/gui/nmgresulthandler.cpp,
+	  src/gui/nmgresulthandler.h, src/gui/nmgutil.h,
+	  src/gui/widgets/Makefile.am, src/gui/widgets/Makefile.in,
+	  src/gui/widgets/main_form.ui, src/gui/widgets/main_form.ui.h,
+	  src/gui/widgets/nmgdynamicwidgetcontainer.cpp,
+	  src/gui/widgets/nmgdynamicwidgetcontainer.h,
+	  src/gui/widgets/nmgmainwindow.cpp,
+	  src/gui/widgets/nmgmainwindow.h,
+	  src/gui/widgets/nmgmodulecontainerwidget.cpp,
+	  src/gui/widgets/nmgmodulecontainerwidget.h,
+	  src/gui/widgets/nmgmodulelistviewitem.cpp,
+	  src/gui/widgets/nmgmodulelistviewitem.h,
+	  src/gui/widgets/nmgmodulelistviewwidget.cpp,
+	  src/gui/widgets/nmgmodulelistviewwidget.h,
+	  src/gui/widgets/nmgtaskprogressbar.cpp,
+	  src/gui/widgets/nmgtaskprogressbar.h,
+	  src/gui/widgets/nmgtaskwidget.cpp,
+	  src/gui/widgets/nmgtaskwidget.h,
+	  src/gui/widgets/widgetfromxml/Makefile.am,
+	  src/gui/widgets/widgetfromxml/Makefile.in,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxml.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxml.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlaction.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlaction.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbutton.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbutton.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbuttongroup.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbuttongroup.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmleventhandler.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmleventhandler.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlinputdata.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlinputwidget.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlinterface.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmltags.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmltextline.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmltextline.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlvariable.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlvariable.h,
+	  src/plugin/Makefile.am, src/plugin/Makefile.in,
+	  src/plugin/nmgisender.h, src/plugin/nmgmodule.cpp,
+	  src/plugin/nmgmodule.h, src/plugin/nmgmodulecollector.moc.cpp,
+	  src/plugin/nmgmodulemanager.cpp, src/plugin/nmgmodulemanager.h,
+	  src/plugin/nmgmoduleregister.cpp, src/plugin/nmgmoduleregister.h,
+	  src/plugin/nmgwidgetfactory.cpp, src/plugin/nmgwidgetfactory.h,
+	  src/plugin/nmgwidgetfromxmlfactory.cpp,
+	  src/plugin/nmgwidgetfromxmlfactory.h,
+	  src/plugin/libnmgexemple/Makefile.am,
+	  src/plugin/libnmgexemple/Makefile.in,
+	  src/plugin/libnmgexemple/nmgexemple.cpp,
+	  src/plugin/libnmgexemple/nmgexemple.h,
+	  src/plugin/libnmgexemple/nmgexemplewidget.cpp,
+	  src/plugin/libnmgexemple/nmgexemplewidget.h,
+	  src/plugin/libnmgmgen/Makefile.am,
+	  src/plugin/libnmgmgen/Makefile.in,
+	  src/plugin/libnmgmgen/nmgmgen.cpp,
+	  src/plugin/libnmgmgen/nmgmgen.h,
+	  src/plugin/libnmgmgen/nmgmgenflow.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflow.h,
+	  src/plugin/libnmgmgen/nmgmgenflowextensionheader.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowextensionheader.h,
+	  src/plugin/libnmgmgen/nmgmgenflowipv6.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowipv6.h,
+	  src/plugin/libnmgmgen/nmgmgenflowlist.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowlist.h,
+	  src/plugin/libnmgmgen/nmgmgenflowmodification.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowmodification.h,
+	  src/plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  src/plugin/libnmgmgen/nmgmgenwidget.h,
+	  src/plugin/libnmgplugintest/Makefile.am,
+	  src/plugin/libnmgplugintest/Makefile.in,
+	  src/plugin/libnmgplugintest/nmgplugintest.cpp,
+	  src/plugin/libnmgplugintest/nmgplugintest.h,
+	  src/plugin/libnmgtrace/Makefile.am,
+	  src/plugin/libnmgtrace/Makefile.in,
+	  src/plugin/libnmgtrace/nmgtrace.cpp,
+	  src/plugin/libnmgtrace/nmgtrace.h, templates/cpp, templates/h:
+	  Initial NetMeterGui branch
+
+2006-02-03 11:27  pcapella
+
+	* AUTHORS, COPYING, ChangeLog, Doxyfile, INSTALL, Makefile.am,
+	  Makefile.cvs, Makefile.in, NEWS, README, TODO, acinclude.m4,
+	  aclocal.m4, config.h.in, configure, configure.files,
+	  configure.in, configure.in.in, netmetergui.kdevelop,
+	  netmetergui.kdevelop.pcs, netmetergui.kdevses, stamp-h.in,
+	  subdirs, admin/ChangeLog, admin/Doxyfile.am,
+	  admin/Doxyfile.global, admin/Makefile.common,
+	  admin/acinclude.m4.in, admin/am_edit, admin/bcheck.pl,
+	  admin/compile, admin/conf.change.pl, admin/config.guess,
+	  admin/config.pl, admin/config.sub, admin/configure.in.bot.end,
+	  admin/configure.in.min, admin/cvs-clean.pl, admin/cvs.sh,
+	  admin/debianrules, admin/depcomp, admin/detect-autoconf.sh,
+	  admin/install-sh, admin/libtool.m4.in, admin/ltmain.sh,
+	  admin/missing, admin/mkinstalldirs, admin/nmcheck, admin/ylwrap,
+	  autom4te.cache/output.0, autom4te.cache/requests,
+	  autom4te.cache/traces.0, debug/src/netmetergui.tag,
+	  debug/src/outnetmetergui, debug/src/conf/Makefile,
+	  debug/src/conf/mgen.editflow.xml,
+	  debug/src/conf/mgen.modifyflow.xml,
+	  debug/src/conf/netmetergui.xml,
+	  debug/src/conf/nmgplugintest.wconf.xml,
+	  debug/src/conf/nmgtrace.wconf.xml,
+	  debug/src/conf/icons/editflow.png,
+	  debug/src/conf/icons/netmeter.png,
+	  debug/src/conf/icons/newflow.png, debug/src/gui/widgets/test.cpp,
+	  debug/src/gui/widgets/test.h, debug/src/gui/widgets/test.moc,
+	  debug/src/icons/folder.png, debug/src/icons/graphic.png,
+	  debug/src/icons/module.png, debug/src/icons/test.png,
+	  src/Makefile.am, src/Makefile.in, src/main.cpp,
+	  src/netmetergui.lsm, src/nmgmain.cpp, src/nmgmain.h,
+	  src/nmgwidgetmoduleinterface.h, src/conf/Makefile,
+	  src/conf/nmgplugintest.wconf.xml, src/conf/nmgtrace.wconf.xml,
+	  src/gui/Makefile.am, src/gui/Makefile.in,
+	  src/gui/nmgapplicationinformation.cpp,
+	  src/gui/nmgapplicationinformation.h, src/gui/nmgconnection.cpp,
+	  src/gui/nmgconnection.h, src/gui/nmginterpret.cpp,
+	  src/gui/nmginterpret.h, src/gui/nmgmessagecenter.cpp,
+	  src/gui/nmgmessagecenter.h, src/gui/nmgobservableinterface.h,
+	  src/gui/nmgobserverinterface.h, src/gui/nmgrandomgenerator.cpp,
+	  src/gui/nmgrandomgenerator.h, src/gui/nmgresulthandler.cpp,
+	  src/gui/nmgresulthandler.h, src/gui/nmgutil.h,
+	  src/gui/widgets/Makefile.am, src/gui/widgets/Makefile.in,
+	  src/gui/widgets/main_form.ui, src/gui/widgets/main_form.ui.h,
+	  src/gui/widgets/nmgdynamicwidgetcontainer.cpp,
+	  src/gui/widgets/nmgdynamicwidgetcontainer.h,
+	  src/gui/widgets/nmgmainwindow.cpp,
+	  src/gui/widgets/nmgmainwindow.h,
+	  src/gui/widgets/nmgmodulecontainerwidget.cpp,
+	  src/gui/widgets/nmgmodulecontainerwidget.h,
+	  src/gui/widgets/nmgmodulelistviewitem.cpp,
+	  src/gui/widgets/nmgmodulelistviewitem.h,
+	  src/gui/widgets/nmgmodulelistviewwidget.cpp,
+	  src/gui/widgets/nmgmodulelistviewwidget.h,
+	  src/gui/widgets/nmgtaskprogressbar.cpp,
+	  src/gui/widgets/nmgtaskprogressbar.h,
+	  src/gui/widgets/nmgtaskwidget.cpp,
+	  src/gui/widgets/nmgtaskwidget.h,
+	  src/gui/widgets/widgetfromxml/Makefile.am,
+	  src/gui/widgets/widgetfromxml/Makefile.in,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxml.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxml.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlaction.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlaction.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbutton.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbutton.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbuttongroup.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlbuttongroup.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmleventhandler.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmleventhandler.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlinputdata.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlinputwidget.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlinterface.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmltags.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmltextline.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmltextline.h,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlvariable.cpp,
+	  src/gui/widgets/widgetfromxml/nmgwidgetfromxmlvariable.h,
+	  src/plugin/Makefile.am, src/plugin/Makefile.in,
+	  src/plugin/nmgisender.h, src/plugin/nmgmodule.cpp,
+	  src/plugin/nmgmodule.h, src/plugin/nmgmodulecollector.moc.cpp,
+	  src/plugin/nmgmodulemanager.cpp, src/plugin/nmgmodulemanager.h,
+	  src/plugin/nmgmoduleregister.cpp, src/plugin/nmgmoduleregister.h,
+	  src/plugin/nmgwidgetfactory.cpp, src/plugin/nmgwidgetfactory.h,
+	  src/plugin/nmgwidgetfromxmlfactory.cpp,
+	  src/plugin/nmgwidgetfromxmlfactory.h,
+	  src/plugin/libnmgexemple/Makefile.am,
+	  src/plugin/libnmgexemple/Makefile.in,
+	  src/plugin/libnmgexemple/nmgexemple.cpp,
+	  src/plugin/libnmgexemple/nmgexemple.h,
+	  src/plugin/libnmgexemple/nmgexemplewidget.cpp,
+	  src/plugin/libnmgexemple/nmgexemplewidget.h,
+	  src/plugin/libnmgmgen/Makefile.am,
+	  src/plugin/libnmgmgen/Makefile.in,
+	  src/plugin/libnmgmgen/nmgmgen.cpp,
+	  src/plugin/libnmgmgen/nmgmgen.h,
+	  src/plugin/libnmgmgen/nmgmgenflow.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflow.h,
+	  src/plugin/libnmgmgen/nmgmgenflowextensionheader.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowextensionheader.h,
+	  src/plugin/libnmgmgen/nmgmgenflowipv6.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowipv6.h,
+	  src/plugin/libnmgmgen/nmgmgenflowlist.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowlist.h,
+	  src/plugin/libnmgmgen/nmgmgenflowmodification.cpp,
+	  src/plugin/libnmgmgen/nmgmgenflowmodification.h,
+	  src/plugin/libnmgmgen/nmgmgenwidget.cpp,
+	  src/plugin/libnmgmgen/nmgmgenwidget.h,
+	  src/plugin/libnmgplugintest/Makefile.am,
+	  src/plugin/libnmgplugintest/Makefile.in,
+	  src/plugin/libnmgplugintest/nmgplugintest.cpp,
+	  src/plugin/libnmgplugintest/nmgplugintest.h,
+	  src/plugin/libnmgtrace/Makefile.am,
+	  src/plugin/libnmgtrace/Makefile.in,
+	  src/plugin/libnmgtrace/nmgtrace.cpp,
+	  src/plugin/libnmgtrace/nmgtrace.h, templates/cpp, templates/h:
+	  Initial revision
+

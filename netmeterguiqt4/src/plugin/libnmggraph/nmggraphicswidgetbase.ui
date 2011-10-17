@@ -1,0 +1,185 @@
+<ui version="4.0" >
+ <class>NMGGraphicsWidgetBase</class>
+ <widget class="QWidget" name="NMGGraphicsWidgetBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>559</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="focusPolicy" >
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle" >
+   <string>Graphic Analysis</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset/>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QSplitter" name="splitter" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="opaqueResize" >
+      <bool>false</bool>
+     </property>
+     <property name="handleWidth" >
+      <number>10</number>
+     </property>
+     <widget class="QGroupBox" name="management" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy" >
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="contextMenuPolicy" >
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="title" >
+       <string>Management</string>
+      </property>
+      <layout class="QGridLayout" >
+       <property name="leftMargin" >
+        <number>5</number>
+       </property>
+       <property name="topMargin" >
+        <number>3</number>
+       </property>
+       <property name="rightMargin" >
+        <number>5</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>5</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QTabWidget" name="managementTabs" >
+         <property name="focusPolicy" >
+          <enum>Qt::WheelFocus</enum>
+         </property>
+         <property name="currentIndex" >
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tabSummary" >
+          <attribute name="title" >
+           <string>Measure &amp;summary</string>
+          </attribute>
+          <layout class="QGridLayout" >
+           <item row="0" column="0" >
+            <widget class="NMGMeasureListWidget" name="measureListWidget" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="selectionMode" >
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabProperties" >
+          <attribute name="title" >
+           <string>Chart &amp;properties</string>
+          </attribute>
+          <layout class="QGridLayout" >
+           <item row="0" column="0" >
+            <widget class="NMGObjectInspector" name="objectInspector" />
+           </item>
+           <item row="0" column="1" >
+            <widget class="NMGPropertyEditor" name="propertyEditor" />
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="NMGPlotWidget" name="plotWidget" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize" >
+       <size>
+        <width>0</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="baseSize" >
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="focusPolicy" >
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="acceptDrops" >
+       <bool>false</bool>
+      </property>
+      <property name="verticalScrollBarPolicy" >
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy" >
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="interactive" >
+       <bool>false</bool>
+      </property>
+      <property name="alignment" >
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="transformationAnchor" >
+       <enum>QGraphicsView::AnchorViewCenter</enum>
+      </property>
+      <property name="resizeAnchor" >
+       <enum>QGraphicsView::AnchorViewCenter</enum>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NMGPlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>nmgplotwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NMGObjectInspector</class>
+   <extends>QTreeWidget</extends>
+   <header>nmgobjectinspector.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NMGPropertyEditor</class>
+   <extends>QTreeWidget</extends>
+   <header>nmgpropertyeditor.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NMGMeasureListWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>nmgmeasurelistwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Metadata -->
+	<xs:element name="address" type="xs:token"/>
+	<xs:element name="port" type="xs:integer"/>
+	
+	<xs:element name="management">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="address" />
+				<xs:element ref="port" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:group name="destination_path" />
+	
+	<xs:element name="destination">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="address" />
+				<!--<xs:element ref="netserver_path" />
+				OR 
+				<xs:element ref="drec_path" />
+				<xs:element ref="decode_path" />-->
+				<xs:group ref="destination_path" />
+				<xs:element ref="management" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:group name="source_path" />
+
+	<xs:element name="source">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="address" />
+				<!--<xs:element ref="netperf_path" />
+				OR
+				<xs:element ref="mgen_path" />-->
+				<!--<xs:any/>-->
+				<xs:group ref="source_path" />
+				<xs:element ref="management" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="result_path" type="xs:token" />
+	<xs:element name="version" type="xs:positiveInteger" />
+	<xs:element name="type" >
+		<xs:simpleType>
+			<xs:restriction base="xs:NMTOKEN">
+				<xs:enumeration value="packets" />
+				<xs:enumeration value="throughput" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="identifier" type="xs:string" />
+	<xs:element name="name" type="xs:string" />
+	
+	<xs:group name="configuration" />
+
+	<xs:element name="metadata">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="identifier" />
+				<xs:element ref="type" minOccurs="0" />
+				<xs:element ref="version" minOccurs="0" />
+				<xs:element ref="result_path" />
+				<xs:element ref="source" />
+				<xs:element ref="destination" />
+				<!--<xs:element ref="conf_netperf" />
+				<xs:element ref="conf_netserver" />
+				OR
+				<xs:element ref="conf_mgen" />
+				<xs:element ref="conf_drec" />-->
+				<xs:group ref="configuration" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="test">
+		<xs:sequence>
+			<xs:element ref="metadata" />
+			<xs:element ref="result" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="test" type="test"/>
+	
+</xs:schema> 

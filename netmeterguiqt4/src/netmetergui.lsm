@@ -1,0 +1,15 @@
+Begin
+Title:          NetMeterGUI -- Some description
+Version:        4.01
+Entered-date:   03 March 2008
+Description:    
+Keywords:       Qt IP QoS Metric
+Author:         René Garcià-Serral <rserral@ac.upc.edu>
+Maintained-by:  Roberto Barreda Orenga <rbarreda@ac.upc.edu>
+Home-page:      http://www.cba.upc.edu/netmeter
+Primary-site:   ftp://www.cba.upc.edu/netmeter-download
+                netmetergui  netmeterguiqt4.tar.gz
+                netmetergui  netmetergui.lsm
+Platform:       Linux. Needs Qt4
+Copying-policy: GPL2
+End

@@ -1,0 +1,14 @@
+<nmgconverter>
+	<file>ooopkt.pl</file>
+	<sdesc>Out of order packets</sdesc>
+	<desc>Perl script used to calculate the number of packets out of order of a dly file (mgen 3.x or 4.x). It's mandatory to specify the mgen version of the dly file in order to run the script successfully.</desc>
+        <usage>
+                <in num="2">
+                        <pin type="int" min="3" max="4"> MGen version: </pin>
+                        <pin type="file" ext="*.dly"> Input DLY file: </pin>
+                </in>
+                <out num="1">
+                        <pout type="file" ext="*.xff" flag="-t"> Output XFF file: </pout>
+                </out> 
+        </usage>
+</nmgconverter>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<guimoduledescription>
+    <info>
+        <module>MGen Edit Flow Widget</module>
+        <date>Tue, 31 Oct 2000 17:00:17 CET</date>
+        <version>0.1</version>
+    </info>
+    <description>
+	<var id="lastButtonClicked" value=""/>
+	<layout type="vlayout">
+		<frame>
+			<layout type="vlayout">
+				<layout type="grid" rows="1" cols="2">
+					<label>Modify Flow Start (ms)</label>
+					<text id="start" validate="positive integer"/>
+				</layout>
+				<label>(Relative to test start)</label>
+				<options type="hlayout" text="Pattern" id="pattern">
+					<option checked="true">Periodic</option>
+					<option>Poisson</option>
+				</options>
+				<layout type="grid" rows="4" cols="2">
+					<label>Rate (packets/sec)</label>
+					<text id="rate" validate="positive integer"/>
+					<label>Packet Size (bytes)</label>
+					<text id="packetSize" validate="positive integer"/>
+					<label>Bandwith ATM (Kbps)</label>
+					<label>100</label>
+					<label>Bandwith Ethernet (Kbps)</label>
+					<label>114</label>
+				</layout>
+			</layout>
+	       </frame>
+		<frame>
+      			<layout type="grid" rows="1" cols="2">
+				<label>TOS</label>
+				<text id="trafficClass"/>
+			</layout>
+		</frame>
+		<layout type="hlayout">
+			<button id="ok">OK</button>
+			<button id="cancel">Cancel</button>
+		</layout>
+	</layout>
+    </description>
+    <actions>
+     <action id="ok" type="clicked">
+      <validation>
+       <validate id="start" type="not null" message="Start time cannot be ommitted"/>
+       <validate id="rate" type="not null" message="Rate cannot be ommitted"/>
+       <validate id="packetSize" type="not null" message="Packet size cannot be ommitted"/>
+      </validation>
+      <assign id="lastButtonClicked" value="ok"/>
+      <hide/>
+     </action>
+     <action id="cancel" type="clicked">
+      <assign id="lastButtonClicked" value="cancel"/>
+      <hide/>
+     </action>
+    </actions>  
+</guimoduledescription>
+ 

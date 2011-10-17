@@ -1,0 +1,2 @@
+set (LIBNETMETER_BASE "/home/rbarreda/doc/project/netmeter/bin/netmeter")
+set (CMAKE_INSTALL_PREFIX "/home/rbarreda/doc/project/netmeter/bin/netmetergui")

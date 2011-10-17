@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="metadata.xsd"/>
+	
+	<xs:redefine schemaLocation="metadata.xsd">
+		<xs:group name="destination_path">
+			<xs:choice>
+				<xs:element name="netserver_path" type="xs:token"/>
+			</xs:choice>
+		</xs:group>
+	</xs:redefine>
+	
+	<xs:redefine schemaLocation="metadata.xsd">
+		<xs:group name="source_path">
+			<xs:choice>
+				<xs:element name="netperf_path" type="xs:token"/>
+			</xs:choice>
+		</xs:group>
+	</xs:redefine>
+	
+	<xs:redefine schemaLocation="metadata.xsd">
+		<xs:group name="configuration">
+			<xs:sequence>
+				<xs:element ref="conf_netperf" />
+				<xs:element ref="conf_netserver" />
+			</xs:sequence>
+		</xs:group>
+	</xs:redefine>
+
+	<!-- Throughtput -->
+	<xs:element name="time" type="xs:decimal"/>
+
+	<xs:element name="tcp">
+		<xs:complexType>
+			<!--<xs:sequence>-->
+			<xs:all>
+				<xs:element name="source" type="xs:token"/>
+				<xs:element name="destination" type="xs:token"/>
+				<xs:element ref="sss" />
+				<xs:element ref="sms" />
+				<xs:element ref="time" />
+				<xs:element name="throughput" type="xs:decimal" />
+				<xs:element ref="rss" />
+			</xs:all>
+			<!--</xs:sequence>-->
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="udp">
+		<xs:complexType>
+			<!--<xs:sequence>-->
+			<xs:all>
+				<xs:element name="source" type="xs:token"/>
+				<xs:element name="destination" type="xs:token"/>
+				<xs:element ref="sss" />
+				<xs:element ref="sms" />
+				<xs:element ref="time" />
+				<xs:element name="send_mesg_ok" type="xs:integer" />
+				<xs:element name="send_mesg_ko" type="xs:integer" />
+				<xs:element name="send_throughput" type="xs:decimal" />
+				<xs:element ref="rss" />
+				<xs:element name="recv_mesg_ok" type="xs:integer" />
+				<xs:element name="recv_throughput" type="xs:decimal" />
+			</xs:all>
+			<!--</xs:sequence>-->
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="result">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="tcp" minOccurs="0" />
+				<xs:element ref="udp" minOccurs="0" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ipv" type="xs:positiveInteger"/>
+	
+	<xs:element name="conf_netserver">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="port" />
+				<xs:element ref="ipv" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="rss" type="xs:integer"/>
+	<xs:element name="rms" type="xs:integer"/>
+	<xs:element name="sss" type="xs:integer"/>
+	<xs:element name="sms" type="xs:integer"/>
+
+	<xs:element name="proto">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:token">
+					<xs:attribute name="nodelay" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="yes"/>
+								<xs:enumeration value="no"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="duration">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="type" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:enumeration value="seconds"/>
+								<xs:enumeration value="bytes"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="conf_netperf">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="destination" type="xs:token"/>
+				<xs:element ref="port" />
+				<xs:element ref="duration" />
+				<xs:element ref="proto" />
+				<xs:element ref="sms" minOccurs="0" />
+				<xs:element ref="sss" minOccurs="0" />
+				<xs:element ref="rms" minOccurs="0" />
+				<xs:element ref="rss" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema> 

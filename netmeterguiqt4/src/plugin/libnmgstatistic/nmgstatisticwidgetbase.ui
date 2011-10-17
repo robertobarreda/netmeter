@@ -1,0 +1,96 @@
+<ui version="4.0" >
+ <class>NMGStatisticWidgetBase</class>
+ <widget class="QWidget" name="NMGStatisticWidgetBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>309</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Graphic Analysis</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QSplitter" name="splitter" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QTabWidget" name="tabTest" >
+      <property name="currentIndex" >
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabPacket" >
+       <attribute name="title" >
+        <string>Traffic Generator Test</string>
+       </attribute>
+       <layout class="QHBoxLayout" >
+        <item>
+         <widget class="NMGGroupTreeWidget" name="statisticTreePacket" >
+          <property name="editTriggers" >
+           <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::NoEditTriggers|QAbstractItemView::SelectedClicked</set>
+          </property>
+          <property name="selectionMode" >
+           <enum>QAbstractItemView::ExtendedSelection</enum>
+          </property>
+          <property name="uniformRowHeights" >
+           <bool>false</bool>
+          </property>
+          <property name="sortingEnabled" >
+           <bool>false</bool>
+          </property>
+          <column>
+           <property name="text" >
+            <string/>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabAggregation" >
+       <attribute name="title" >
+        <string>Throughput Test</string>
+       </attribute>
+       <layout class="QHBoxLayout" >
+        <item>
+         <widget class="NMGGroupTreeWidget" name="statisticTreeAggregation" >
+          <property name="editTriggers" >
+           <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::NoEditTriggers|QAbstractItemView::SelectedClicked</set>
+          </property>
+          <property name="selectionMode" >
+           <enum>QAbstractItemView::ExtendedSelection</enum>
+          </property>
+          <property name="uniformRowHeights" >
+           <bool>false</bool>
+          </property>
+          <property name="sortingEnabled" >
+           <bool>false</bool>
+          </property>
+          <column>
+           <property name="text" >
+            <string/>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QTextBrowser" name="statisticView" />
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NMGGroupTreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header location="global" >nmggrouptreewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

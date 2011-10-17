@@ -1,0 +1,19 @@
+<nmgconverter>
+	<file>delayfile.pl</file>
+	<sdesc>Delay info of a DLY file</sdesc>
+	<desc>Perl script used to parse dly files from mgen (version 3.x | 4.x) returning the delay info. It's mandatory to specify the mgen version of the dly file in order to run the script successfully. The output is a non-standard text file. </desc>
+        <usage>
+                <in num="t">
+			<pin type="int" min="3" max="4"> MGen version: </pin>
+			<pin type="int" min="0" max="100000" flag="-f"> Flow Number: </pin>
+			<pin type="int" min="0" max="100000" flag="-r"> Packet aggregation in msec: </pin>
+			<pin type="check" flag="-s"> Sequence number since start (instead of delay): </pin>
+			<pin type="check" flag="-d"> Only put delay values: </pin>
+			<pin type="check" flag="-p"> Insert Packet Loss Ratio: </pin>
+                        <pin type="file" ext="*.dly"> Input DLY file: </pin>
+                </in>
+                <out num="1">
+                        <pout type="file" ext="text" flag="-t"> Output TEXT file: </pout>
+                </out>
+        </usage>
+</nmgconverter>

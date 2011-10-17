@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="packets.xsd"/>
+
+	<xs:redefine schemaLocation="packets.xsd">
+		<xs:complexType name="flow">
+			<xs:complexContent>
+				<xs:restriction base="flow">
+					<xs:sequence>
+						<xs:element ref="sent" />
+						<xs:element ref="received" />
+						<xs:element ref="duration" />
+						<xs:element ref="lost" />
+						<xs:element ref="loss_ratio" />
+						<xs:element ref="duplicated" />
+						<xs:element ref="duplicated_ratio" />
+						<xs:element ref="outoforder" />
+						<xs:element ref="outoforder_ratio" />
+						<xs:element ref="delay" minOccurs="0"/>
+						<xs:element ref="ipdv" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attribute name="name" type="xs:string" use="optional" default="Flow" />
+				</xs:restriction>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:redefine>
+
+	<xs:redefine schemaLocation="metadata.xsd">
+		<xs:complexType name="test">
+			<xs:complexContent>
+				<xs:restriction base="test">
+					<xs:sequence>
+						<xs:element ref="metadata" />
+						<xs:element ref="statistic" />
+					</xs:sequence>
+				</xs:restriction>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:redefine>
+	
+	<!-- Statistic Packets -->
+	<xs:element name="p999" type="xs:decimal"/>
+	<xs:element name="p99" type="xs:decimal"/>
+	<xs:element name="p95" type="xs:decimal"/>
+	<xs:element name="p50" type="xs:decimal"/>
+	<xs:element name="jitter" type="xs:decimal"/>
+	<xs:element name="stdev" type="xs:decimal"/>
+	<xs:element name="max" type="xs:decimal"/>
+	<xs:element name="min" type="xs:decimal"/>
+	<xs:element name="average" type="xs:decimal"/>
+
+	<xs:element name="ipdv">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="average" minOccurs="0"/>
+				<xs:element ref="min" minOccurs="0"/>
+				<xs:element ref="max" minOccurs="0"/>
+				<xs:element ref="stdev" minOccurs="0"/>
+				<xs:element ref="jitter" minOccurs="0"/>
+				<xs:element ref="p50" minOccurs="0"/>
+				<xs:element ref="p95" minOccurs="0"/>
+				<xs:element ref="p99" minOccurs="0"/>
+				<xs:element ref="p999" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="delay">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="average" minOccurs="0"/>
+				<xs:element ref="min" minOccurs="0"/>
+				<xs:element ref="max" minOccurs="0"/>
+				<xs:element ref="stdev" minOccurs="0"/>
+				<xs:element ref="jitter" minOccurs="0"/>
+				<xs:element ref="p50" minOccurs="0"/>
+				<xs:element ref="p95" minOccurs="0"/>
+				<xs:element ref="p99" minOccurs="0"/>
+				<xs:element ref="p999" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="outoforder_ratio" type="xs:decimal"/>
+	<xs:element name="outoforder" type="xs:integer"/>
+	<xs:element name="duplicated_ratio" type="xs:decimal"/>
+	<xs:element name="duplicated" type="xs:integer"/>
+	<xs:element name="loss_ratio" type="xs:decimal"/>
+	<xs:element name="lost" type="xs:integer"/>
+	<xs:element name="duration" type="xs:decimal"/>
+	<xs:element name="received" type="xs:integer"/>
+	<xs:element name="sent" type="xs:integer"/>
+
+	<xs:element name="statistic">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="flow" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

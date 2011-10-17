@@ -1,0 +1,17 @@
+/home/rbarreda/doc/project/netmeter/bin/netmeter/bin/netmeter
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmexemple.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmexempleadder.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmping.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmtrace.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmmgen.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/share/netmeter/xml/conf_drec4.xslt
+/home/rbarreda/doc/project/netmeter/bin/netmeter/share/netmeter/xml/conf_drec.xslt
+/home/rbarreda/doc/project/netmeter/bin/netmeter/share/netmeter/xml/conf_mgen4.xslt
+/home/rbarreda/doc/project/netmeter/bin/netmeter/share/netmeter/xml/conf_mgen.xsd
+/home/rbarreda/doc/project/netmeter/bin/netmeter/share/netmeter/xml/conf_mgen.xslt
+/home/rbarreda/doc/project/netmeter/bin/netmeter/share/netmeter/xml/test_mgen.xsd
+/home/rbarreda/doc/project/netmeter/bin/netmeter/share/netmeter/xml/test_mgen.xslt
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmnetperf.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmsnooper.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmsimulator.so
+/home/rbarreda/doc/project/netmeter/bin/netmeter/lib/netmeter/plugins/libnmsync.so

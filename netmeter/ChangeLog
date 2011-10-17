@@ -1,0 +1,1582 @@
+2006-07-06 16:09  rserral
+
+	* src/plugins/libnmmgen/xml/Makefile.am: rserral: Dammit put all
+	  the Makefile.am
+
+2006-06-29 18:50  rserral
+
+	* src/plugins/libnmmgen/: nmmgeninterpret.cpp, nmmgeninterpret.h:
+	  rserral: finally, dynamic paths working
+
+2006-06-29 18:49  rserral
+
+	* src/plugins/libnmmgen/Makefile.am: rserral: XML output dir
+	  corrected
+
+2006-06-29 18:49  rserral
+
+	* configure.in: rserral: More fixes and directory updates :)
+
+2006-06-29 17:59  rserral
+
+	* src/plugins/libnmmgen/xml/: conf_drec.xslt, conf_mgen.xsd,
+	  conf_mgen.xslt, test_mgen.xsd, test_mgen.xslt: rserral: Now xml
+	  and xsd are good
+
+2006-06-29 17:19  rserral
+
+	* src/plugins/: Makefile.am, libnmexemple/Makefile.am,
+	  libnmmgen/Makefile.am, libnmping/Makefile.am,
+	  libnmsnooper/Makefile.am, libnmtrace/Makefile.am: rserral: More
+	  Makefile.am updates :)
+
+2006-06-29 17:19  rserral
+
+	* AUTHORS: rserral: Now I'm an author also :P
+
+2006-06-29 17:18  rserral
+
+	* configure.in: rserral: Check for plugins
+
+2006-06-29 17:18  rserral
+
+	* src/netmeter.cpp: rserral: Now all the modules can be loaded in
+	  the install dir.
+
+	  Now I'll have to work around the fact that if we don't install
+	  the modules they are not loaded
+
+2006-06-29 15:08  rserral
+
+	* src/plugins/libnmmgen/nmmgeninterpret.cpp: rserral: TxTime !=
+	  RxTime
+
+2006-06-29 15:05  rserral
+
+	* ChangeLog: rserral: Changelog update
+
+2006-06-29 15:03  rserral
+
+	* Makefile.am, src/plugins/libnmexemple/Makefile.am,
+	  src/plugins/Makefile.am, src/plugins/libnmmgen/Makefile.am,
+	  src/plugins/libnmping/Makefile.am,
+	  src/plugins/libnmsnooper/Makefile.am,
+	  src/plugins/libnmtrace/Makefile.am: rserral: Correct install dir
+	  for plugins, now we must load them properly
+
+2006-06-22 23:54  enieto
+
+	* src/plugins/libnmmgen/: Makefile.am, nmgmgenexternaldrec.cpp,
+	  nmmgen.cpp, nmmgen.h, nmmgenexternaldecode.cpp,
+	  nmmgenexternaldecode.h, nmmgenexternaldistr.cpp,
+	  nmmgenexternaldistr.h, nmmgenexternalmgen.cpp,
+	  nmmgenexternalmgen.h, nmmgeninterpret.cpp, nmmgeninterpret.h,
+	  nmmgenreadytorunmgen.h: Update modul MGEN core
+
+2006-06-22 20:59  enieto
+
+	* src/plugins/libnmmgen/: nmmgeninterpret.cpp, nmmgeninterpret.h:
+	  Update interpret xml core
+
+2006-06-21 11:08  pcapella
+
+	* src/core/nmexternalremote.cpp: He ficat 3 sec en lloc de 30 sec
+	  en el timeout
+
+2006-06-21 10:51  pcapella
+
+	* src/core/nmexternalremote.cpp: Corregit el timeout en les
+	  connexions ssh
+
+2006-06-20 00:02  enieto
+
+	* src/core/nminterface.cpp: Modificat per a que envii primer la
+	  mida del missatge i desprÃ©s el missatge
+
+2006-06-14 12:55  pcapella
+
+	* src/core/nminterpret.cpp: Els "exit" i els "deattach" no
+	  funcionaven, culpa del usleep del NMInterface::sendCommand. S'ha
+	  corregit.
+
+2006-06-14 12:54  pcapella
+
+	* src/core/nminterface.cpp: A la funció sendCommand canviem el
+	  sleep(1) per un usleep(400), en tenim prou amb aquest temps de
+	  espera.
+
+2006-06-08 23:28  enieto
+
+	* src/core/nminterface.cpp: Upload interface amb sleep 1 segon
+	  temporal
+
+2006-06-08 11:50  pcapella
+
+	* src/plugins/: libnmtrace/nmtrace.cpp,
+	  libnmmgen/nmgmgenexternaldrec.cpp,
+	  libnmmgen/nmmgenexternaldecode.cpp,
+	  libnmmgen/nmmgenexternalmgen.cpp: S'adapta a la nova funció run
+	  del NMExternal
+
+2006-06-08 11:50  pcapella
+
+	* src/core/nmftp.cpp: S'adapta a la nova funció run
+
+2006-06-08 11:49  pcapella
+
+	* src/core/: nmexternal.cpp, nmexternal.h, nmexternallocal.cpp,
+	  nmexternallocal.h, nmexternalremote.cpp, nmexternalremote.h:
+	  Canviada la funcio run(), ara ens retorna el tipus d'error que
+	  s'ha donat
+
+2006-06-07 23:56  enieto
+
+	* src/core/nmexternalremote.cpp: Update classes per acceptar ports
+	  diferents
+
+2006-06-07 23:55  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmmgenexternaldecode.cpp, nmmgenexternalmgen.cpp: Update classes
+	  per acceptar ports diferents de connexio
+
+2006-06-07 23:37  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgenexternaldecode.cpp,
+	  nmmgenexternaldecode.h, nmmgenexternalmgen.cpp,
+	  nmmgenexternalmgen.h, nmmgeninterpret.cpp, nmmgeninterpret.h:
+	  Update classes per acceptar ports diferents de connexio
+
+2006-06-07 23:36  enieto
+
+	* src/core/: nmexternalremote.cpp, nmftp.cpp, nmftp.h: Update
+	  classes per acceptar ports diferents
+
+2006-06-06 19:45  enieto
+
+	* src/core/: nmexternal.cpp, nmexternal.h, nmexternalremote.cpp,
+	  nmexternalremote.h: Actualitzacio kill external remote
+
+2006-06-06 17:25  enieto
+
+	* src/core/nmexternal.h: Faig que shellCommand sigui d'acce public
+
+2006-06-04 20:49  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgenexternaldecode.cpp,
+	  nmmgenexternaldecode.h, nmmgenexternalmgen.cpp,
+	  nmmgenexternalmgen.h, nmmmgenutils.h: Update modul mgen core
+
+2006-06-03 21:37  enieto
+
+	* src/plugins/libnmmgen/: Makefile.am, nmgmgenexternaldrec.cpp,
+	  nmmgeneventdecodefinished.h, nmmgeneventdrecrunning.h,
+	  nmmgeneventfinisehddrec.h, nmmgeneventfinishedmgen.h,
+	  nmmgeneventreadytorundrec.h, nmmgen.h: Update modul MGEN core
+	  events
+
+2006-06-01 00:23  enieto
+
+	* src/plugins/libnmmgen/: nmmgeninterpret.cpp, nmmgeninterpret.h:
+	  Update creacio de XML resultat modeul MGEN core
+
+2006-05-31 20:13  enieto
+
+	* src/plugins/libnmmgen/: nmmgeninterpret.cpp, nmmgeninterpret.h:
+	  Update creacio de XML resultat
+
+2006-05-31 17:35  pcapella
+
+	* src/core/nmftp.cpp: Corregit bug en la construcció de la variable
+	  sftp
+
+2006-05-31 00:49  enieto
+
+	* src/plugins/libnmmgen/: nmmgen.cpp, nmmgeninterpret.cpp,
+	  nmmgeninterpret.h: Update moduel mgen per canviar format fitxer
+
+2006-05-30 16:10  pcapella
+
+	* src/core/nmexternal.cpp: Nova implementació del shellCommand
+
+2006-05-30 10:56  pcapella
+
+	* src/core/nmthread.cpp: Corregit bug "No memory allocation". Ara
+	  els threads es creen amb estat detach.
+
+2006-05-12 11:25  pcapella
+
+	* src/core/nminterpret.cpp: Afegit el camp "finisihed" en
+	  generatePendent
+
+2006-05-11 11:35  pcapella
+
+	* src/plugins/libnmtrace/nmtrace.cpp: dynamic_cast
+
+2006-05-11 11:31  pcapella
+
+	* src/plugins/libnmtrace/nmtrace.cpp: Afegit static_cast
+
+2006-05-11 11:29  pcapella
+
+	* src/core/: nmtimer.cpp, nmtimer.h: Afegida la documentació que
+	  faltava
+
+2006-05-11 11:23  pcapella
+
+	* src/core/nmtaskstatus.cpp: Afegit static_cast
+
+2006-05-11 11:23  pcapella
+
+	* src/core/: nmserversocket.cpp, nmserversocket.h: Afegit
+	  static_cast Neteja de codi
+
+2006-05-11 11:19  pcapella
+
+	* src/core/nmtaskstat.cpp: Ara controlem de que la interfície de
+	  plugin estigui carregada abans d'executar el status al plugin
+
+2006-05-11 11:18  pcapella
+
+	* src/core/nmtaskstop.cpp: Ara controlem de que la interfície de
+	  plugin estigui carregada abans d'executar el stop al plugin
+
+2006-05-10 15:41  pcapella
+
+	* src/core/Makefile.am: Elimintats els fitxers NMTaskClean,
+	  NMTaskDirty, NMTaskCompleted
+
+2006-05-10 15:39  pcapella
+
+	* src/core/nminterpret.cpp: Afegit el nou constructor als nous
+	  objectes de tipus de tasca
+
+2006-05-10 15:36  pcapella
+
+	* src/core/nmmoduleinterface.cpp: Afegit el nou constructor de
+	  l'objecte NMTaskStatusPluginPurge
+
+2006-05-10 15:36  pcapella
+
+	* src/core/: nmthread.cpp, nmthread.h: Agefit nou métode
+	  NMThread::wait()
+
+2006-05-10 15:32  pcapella
+
+	* src/core/: nmtaskconfigure.cpp, nmtaskconfigure.h,
+	  nmtaskdeattach.cpp, nmtaskdeattach.h, nmtaskpurgeplugin.cpp,
+	  nmtaskpurgeplugin.h, nmtaskquit.cpp, nmtaskstart.cpp,
+	  nmtaskstart.h, nmtaskstat.cpp, nmtaskstat.h, nmtaskstop.cpp,
+	  nmtaskstop.h: Nou constructor donat per el costructor de la
+	  classe pare NMTask
+
+2006-05-10 15:30  pcapella
+
+	* src/core/: nmtask.cpp, nmtask.h: Nou constructor amb suport per
+	  l'estat NMTaskStatusStartTimer, en el cas que hi hagi una tasca
+	  amb temps d'espera
+
+2006-05-10 15:27  pcapella
+
+	* src/core/: nmtaskstatus.cpp, nmtaskstatus.h: Integrem dins el
+	  mateix fitxer el NMTaskStatusClean, ...Dirty i Completed.  Agegim
+	  una nova classe NMTaskStatusStartTimer
+
+2006-05-10 13:24  pcapella
+
+	* src/core/nmtimer.cpp: Ara si el temps proposat es inferior a la
+	  hora actual no retorna fals sino que es llança l'event
+
+2006-05-10 12:46  pcapella
+
+	* src/core/nmdatetime.cpp: Borrat comentari que no hauria de sortir
+
+2006-05-10 12:36  pcapella
+
+	* src/core/: nmdatetime.cpp, nmdatetime.h: Corregit bug en <=, >=
+	  de NMDateTime Afegida correcció de doxygen
+
+2006-05-05 11:29  pcapella
+
+	* src/core/nmftp.cpp: Pau Capella <pcapella@ac.upc.edu> 	En
+	  el cas que el username estgui buit, s'agafa la variable d'entorn
+	  USER com username
+
+2006-05-05 11:18  pcapella
+
+	* src/core/: nminterface.cpp, nmserversocket.cpp, nmserversocket.h:
+	  Pau Capella <pcapella@ac.upc.edu>   Corregits un warning en el
+	  constructor
+
+2006-05-05 11:16  pcapella
+
+	* src/core/: nmhost.cpp, nmhost.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Afegit mètode isLocalhost
+
+2006-05-04 18:29  pcapella
+
+	* src/core/nmeventmanager.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  registerExternalListener borrat comprovació d'execució
+
+2006-05-04 18:26  pcapella
+
+	* src/plugins/libnmmgen/nmmgeninterpret.cpp: Pau Capella
+	  <pcapella@ac.upc.edu>  Corregit bug que no agafa el username de
+	  la estació management
+
+2006-05-03 17:22  pcapella
+
+	* src/core/: nmftp.cpp, nmftp.h: Pau Capella <pcapella@ac.upc.edu>
+	  Corregit bug que provocava Segmention Fault quan es feia un
+	  exit
+
+2006-05-03 15:39  pcapella
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmmgenexternaldecode.cpp, nmmgenexternalmgen.cpp: Pau Capella
+	  <pcapella@ac.upc.edu>  Ara treballa amb la nova interfície de
+	  NMFtp
+
+2006-05-03 15:37  pcapella
+
+	* src/core/: nmftp.cpp, nmftp.h: Pau Capella <pcapella@ac.upc.edu>
+	  Afegits events al NMFtp
+
+2006-05-03 11:25  pcapella
+
+	* src/core/nminterpret.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Corregit bug que podia provoca la perdua de missatges cap a la
+	  gui
+
+2006-05-03 11:23  pcapella
+
+	* src/core/: nminterface.cpp, nminterface.h: Pau Capella
+	  <pcapella@ac.upc.edu>  Afegit semàfor per evitar que dos threads
+	  enviem missatges a la gui al mateix temps
+
+2006-05-02 19:49  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp, nmmgen.cpp,
+	  nmmgenexternaldecode.cpp, nmmgenexternalmgen.cpp: Update modul
+	  mgen core per indicar l'status del test
+
+2006-05-02 18:57  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h,
+	  nmmgenexternalmgen.cpp, nmmgenexternalmgen.h,
+	  nmmgeninterpret.cpp, nmmgeninterpret.h, nmmmgenutils.h: Update
+	  modul MGEN core
+
+2006-05-02 14:44  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h,
+	  nmmgenexternaldecode.cpp, nmmgenexternaldecode.h,
+	  nmmgenexternalmgen.cpp: Update modul mgen core
+
+2006-04-30 18:32  enieto
+
+	* src/plugins/libnmmgen/: Makefile.am, nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h,
+	  nmmgenexternaldecode.cpp, nmmgenexternaldecode.h,
+	  nmmgenexternalmgen.cpp, nmmgenexternalmgen.h,
+	  nmmgenstatusmanager.h: Update modul MGEN core
+
+2006-04-29 21:51  enieto
+
+	* src/netmeter.cpp: Update main
+
+2006-04-29 21:42  enieto
+
+	* src/core/: nmftp.cpp, nmftp.h: Update NMFtp
+
+2006-04-29 21:28  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h,
+	  nmmgenexternalmgen.cpp, nmmgeninterpret.cpp, nmmgeninterpret.h,
+	  nmmmgenutils.h: Update modul MGEN core
+
+2006-04-28 18:57  pcapella
+
+	* src/core/nmftp.cpp: SFTP alpha
+
+2006-04-27 23:48  enieto
+
+	* src/plugins/libnmmgen/: Makefile.am, nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h,
+	  nmmgenerrormanager.h, nmmgenexternalmgen.cpp,
+	  nmmgenexternalmgen.h: Update modul mgen core
+
+2006-04-27 20:55  enieto
+
+	* src/core/nmftp.cpp: Updat NMFTp by Ernest (dema comento amb pau)
+
+2006-04-27 20:54  enieto
+
+	* src/plugins/libnmmgen/: Makefile.am, nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h, nmmmgenutils.h:
+	  Update modul MGEN coe
+
+2006-04-26 00:09  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h,
+	  nmmgenexternalmgen.cpp: Update mgen core
+
+2006-04-24 19:43  enieto
+
+	* src/plugins/libnmmgen/: nmmgen.cpp, nmmgen.h,
+	  nmmgenexternalmgen.cpp, nmmgenexternalmgen.h,
+	  nmmgeninterpret.cpp, nmmgeninterpret.h: Update mgen core
+
+2006-04-19 15:59  enieto
+
+	* src/netmeter.cpp: Update main per a no carregar el send file
+
+2006-04-19 15:58  enieto
+
+	* src/plugins/libnmexemple/Makefile.am: Update send file
+
+2006-04-19 13:08  pcapella
+
+	* src/core/: nmdatetime.cpp, nmdatetime.h: Pau Capella
+	  <pcapella@ac.upc.edu>    -Afegit nou mètode fromString
+	  -Corregit bug al constructor NMDate()
+
+2006-04-18 19:27  enieto
+
+	* src/plugins/libnmmgen/: nmgmgenexternaldrec.cpp,
+	  nmgmgenexternaldrec.h, nmmgen.cpp, nmmgen.h,
+	  nmmgenexternalmgen.cpp, nmmgenexternalmgen.h: Update module MGEN
+	  core
+
+2006-04-18 19:26  enieto
+
+	* src/plugins/libnmmgen/Makefile.am: Update Makefile.am
+
+2006-04-07 15:25  pcapella
+
+	* src/core/: nmeventmanager.cpp, nmeventmanager.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Suport per a NMTimer
+
+2006-04-07 15:25  pcapella
+
+	* src/core/: nmtimer.cpp, nmtimer.h: Pau Capella
+	  <pcapella@ac.upc.edu>  NMTimer suporta timeouts amb NMDateTime
+
+2006-04-07 15:24  pcapella
+
+	* src/core/: nmdatetime.cpp, nmdatetime.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Afegit nou métode al NMTimer: addSecs
+
+2006-04-07 12:11  pcapella
+
+	* src/core/nmftp.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Alliberem els objectes cmd
+
+2006-04-07 12:08  pcapella
+
+	* src/core/: nmeventmanager.cpp, nmeventmanager.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Gestor d'events optimitzats
+
+2006-04-07 12:08  pcapella
+
+	* src/core/: nmexternal.cpp, nmexternal.h, nmexternallocal.cpp,
+	  nmexternallocal.h, nmexternalremote.cpp, nmexternalremote.h,
+	  nmsocket.cpp, nmsocket.h: Pau Capella <pcapella@ac.upc.edu>
+	  Neteja de codi i optimització dels events
+
+2006-04-05 11:28  pcapella
+
+	* src/core/: nmftp.cpp, nmftp.h: Pau Capella <pcapella@ac.upc.edu>
+	  Afegits els mètodes mkdir i rmdir
+
+2006-04-05 00:12  enieto
+
+	* src/plugins/libnmmgen/nmmgen.cpp: Update mgen core
+
+2006-04-04 12:51  pcapella
+
+	* src/core/: Makefile.am, nmftp.cpp, nmftp.h: Pau Capella
+	  <pcapella@ac.upc.edu> 	Afegida nova classe NMFtp, que
+	  implementa el protocol Secure FTP.
+
+2006-04-02 13:23  enieto
+
+	* src/plugins/libnmmgen/nmmgen.cpp: Update module mgen core
+
+2006-04-02 13:23  enieto
+
+	* src/netmeter.cpp: update per a carregar el modul de enviar
+	  fitxers
+
+2006-04-02 13:22  enieto
+
+	* src/plugins/libnmexemple/: Makefile.am, nmsecuresendfile.cpp,
+	  nmsecuresendfile.h: Nou modul de prova que premet enviar fitxers
+	  via ssh a un host remot (comanda scp)
+
+2006-04-01 21:17  enieto
+
+	* src/plugins/libnmmgen/: Makefile.am, nmmgen.cpp, nmmgen.h,
+	  nmmgeninterpret.cpp, nmmgeninterpret.h: Update modul mgen core
+
+2006-03-30 22:58  enieto
+
+	* src/plugins/libnmmgen/nmmgen.cpp: Update module MGEN core
+
+2006-03-30 13:09  pcapella
+
+	* src/netmeter.cpp: Pau Capella <pcapella@ac.upc.edu>	Afegits
+	  argumets -p port i -h
+
+2006-03-30 13:08  pcapella
+
+	* src/core/Makefile.am: Pau Capella <pcapella@ac.upc.edu>
+	  Noves classes NMDateTime NMSettings
+
+2006-03-30 13:08  pcapella
+
+	* src/core/: nminterface.cpp, nminterface.h: Pau Capella
+	  <pcapella@ac.upc.edu>  El port del servidor ara s'agafa de
+	  NMSettings
+
+2006-03-30 13:06  pcapella
+
+	* src/core/: nmsettings.cpp, nmsettings.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Afegida classe NMSettings
+
+2006-03-30 13:06  pcapella
+
+	* src/core/: nmdatetime.cpp, nmdatetime.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Afegides classes NMDate, NMTime,
+	  NMDateTime
+
+2006-03-29 15:37  pcapella
+
+	* src/core/nmmodulemanager.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  -Eliminats missatges de debug
+
+2006-03-27 16:19  pcapella
+
+	* src/core/nmxml.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Corregit bug a getValue. Quan es llegia el valor d'un tag que no
+	  tenia valor
+
+2006-03-27 15:45  pcapella
+
+	* src/plugins/libnmtrace/nmtrace.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> 	Els hosts unknow també envien un
+	  missatge de status
+
+2006-03-27 12:53  pcapella
+
+	* src/netmeter.cpp: Pau Capella <pcapella@ac.upc.edu>	Afegit
+	  NMSnopper al main
+
+2006-03-27 12:53  pcapella
+
+	* src/plugins/libnmsnooper/: nmsnooper.cpp, nmsnooper.h: Pau
+	  Capella <pcapella@ac.upc.edu>      Afegit NMSnopper plugin
+
+2006-03-23 12:10  pcapella
+
+	* configure.in: Pau Capella <pcapella@ac.upc.edu>	Afegit
+	  NMSnopper plugin
+
+2006-03-23 11:52  pcapella
+
+	* src/plugins/libnmsnooper/Makefile.am: Pau Capella
+	  <pcapella@ac.upc.edu>       Makefile
+
+2006-03-23 11:37  pcapella
+
+	* src/plugins/libnmsnooper/: Makefile.am, nmsnooper.cpp,
+	  nmsnooper.h: Pau Capella <pcapella@ac.upc.edu>	 Afegim el
+	  plugin NMSnooper
+
+2006-03-23 11:16  pcapella
+
+	* src/plugins/Makefile.am: Pau Capella <pcapella@ac.upc.edu>
+	  Makefile NMSnopper
+
+2006-03-23 10:21  pcapella
+
+	* src/core/nminterpret.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Solucionat bug que ficava dos tags "data" al generatePendent,
+	  generateResut i generateStatus
+
+2006-03-22 20:10  enieto
+
+	* src/plugins/libnmmgen/nmmgen.cpp: Update module MGEN status
+
+2006-03-21 16:43  pcapella
+
+	* src/plugins/libnmtrace/: nmtrace.cpp, nmtrace.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Agafem el temps del hosts
+
+2006-03-20 17:27  pcapella
+
+	* src/core/: nmfile.cpp, nmfile.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Canvi de getFileName() a fileName()
+
+2006-03-20 17:15  pcapella
+
+	* src/core/: nmmoduleinterface.cpp, nmmoduleinterface.h: Pau
+	  Capella <pcapella@ac.upc.edu>      Suport per enviar Status.
+
+2006-03-20 17:14  pcapella
+
+	* src/core/Makefile.am: Pau Capella <pcapella@ac.upc.edu>
+	  Afegida la classe NMStatus
+
+2006-03-20 17:08  pcapella
+
+	* src/core/: nminterpret.cpp, nminterpret.h: Pau Capella
+	  <pcapella@ac.upc.edu>  Suport per enviar missatges status a la
+	  GUI
+
+2006-03-20 17:07  pcapella
+
+	* src/core/: nmstatus.cpp, nmstatus.h: Pau Capella
+	  <pcapella@ac.upc.edu>        Afegida classe NMStatus, permet
+	  crear missatges de status
+
+2006-03-20 17:04  pcapella
+
+	* src/plugins/libnmtrace/: nmtrace.cpp, nmtrace.h: Pau Capella
+	  <pcapella@ac.upc.edu>    - Suport per Status	   - Nou protocol,
+	  suport per "management stations"
+
+2006-03-19 23:51  enieto
+
+	* src/plugins/libnmmgen/: nmdrec.h, nmmgenmain.h: [no log message]
+
+2006-03-19 23:51  enieto
+
+	* src/plugins/libnmmgen/nmmgen.cpp: Correcio path fixser xlst
+
+2006-03-19 23:16  enieto
+
+	* src/Makefile.am: Afegits includes per a les llibreries libxslt
+	  per al modul mgen
+
+2006-03-19 23:15  enieto
+
+	* src/plugins/libnmmgen/: Makefile.am, nmmgen.cpp: Actualitzacio
+	  modul mgen core
+
+2006-03-16 10:39  pcapella
+
+	* src/plugins/libnmtrace/nmtrace.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> 	Suport per Management stations.
+
+2006-03-16 10:36  pcapella
+
+	* src/core/: nmparent.h, nmparent.cpp: Pau Capella
+	  <pcapella@ac.upc.edu>        Reimplemetació del métode
+	  listMemoryObjects
+
+2006-03-16 10:33  pcapella
+
+	* src/core/nmmodulemanager.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Eliminen la fabrica nmffactory.
+
+2006-03-16 10:33  pcapella
+
+	* src/core/nmmodulemanager.h: Pau Capella <pcapella.ac.upc.edu>
+	  Eliminen la fabrica nmffactory.
+
+2006-03-09 16:03  enieto
+
+	* src/: plugins/libnmexemple/Makefile.am,
+	  plugins/libnmexemple/nmexempleadder.cpp,
+	  plugins/libnmexemple/nmexempleadder.h, netmeter.cpp: Nou module
+	  d'exemple: Adder
+
+2006-03-05 20:16  enieto
+
+	* src/core/nmmodulefactory.h: Actualitzacio classe per a ficar una
+	  funcio virtual
+
+2006-03-01 12:46  pcapella
+
+	* src/netmeter.cpp: Pau Capella <pcapella@ac.upc.edu>	Millora en
+	  la gestió d'errors quan no es pot crear el servidor de NetMeter
+
+2006-03-01 12:42  pcapella
+
+	* src/core/nmmodule.cpp: Pau Capella <pcapella@ac.upc.edu>	Ara
+	  mostra per pantalla quan una interfície de modul és creada i
+	  borrada
+
+2006-03-01 12:40  pcapella
+
+	* src/plugins/libnmtrace/nmtrace.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> 	Corregit bug, que no envia la
+	  adreça del host source en els resultats.	    Neteja de couts
+
+2006-03-01 12:36  pcapella
+
+	* src/plugins/libnmtrace/nmtrace.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> 	Suport per peticions de stop
+
+2006-03-01 12:35  pcapella
+
+	* src/core/nmdns.cpp: Pau Capella <pcapella@ac.upc.edu> 	Ara
+	  al resolv() podem retorna un host sense adreça
+
+2006-03-01 12:34  pcapella
+
+	* src/core/nmhost.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Corregit bug al mètode isNull()
+
+2006-02-28 10:31  pcapella
+
+	* src/plugins/libnmexemple/Makefile.am: Pau Capella
+	  <pcapella@ac.upc.edu>       Makefile.am amb suport per libxml2
+
+2006-02-28 10:30  pcapella
+
+	* src/plugins/: libnmexemple/Makefile.in, libnmmgen/Makefile.in:
+	  Pau Capella <pcapella@ac.upc.edu>	 Netejant cvs de
+	  Makefile.in
+
+2006-02-28 10:28  pcapella
+
+	* configure.in: Pau Capella <pcapella@ac.upc.edu>	Afegit al
+	  configure.in el plugin nmexemple
+
+2006-02-28 00:19  enieto
+
+	* src/plugins/libnmexemple/Makefile.in: [no log message]
+
+2006-02-28 00:12  enieto
+
+	* src/: netmeter.cpp, plugins/Makefile.am,
+	  plugins/libnmexemple/Makefile.am,
+	  plugins/libnmexemple/nmexemple.cpp,
+	  plugins/libnmexemple/nmexemple.h: Actualitzacio modul Exemple
+	  core
+
+2006-02-23 13:02  pcapella
+
+	* src/Makefile.in: Pau Capella <pcapella@ac.upc.edu>	Eliminat
+	  Makefile.in, ja que és autogenerat
+
+2006-02-23 12:57  pcapella
+
+	* src/plugins/: libnmping/nmping.cpp, libnmtrace/nmtrace.cpp: Pau
+	  Capella <pcapella@ac.upc.edu> 	Corregit bug que donat Seg.
+	  Fault quan enviem de primera un start sense dades
+
+2006-02-23 12:56  pcapella
+
+	* src/plugins/: Makefile.in, libnmping/Makefile.in,
+	  libnmtrace/Makefile.in: Pau Capella <pcapella@ac.upc.edu>
+	  Eliminat Makefile.in, ja que és autogenerat
+
+2006-02-23 12:55  pcapella
+
+	* src/core/Makefile.in: Pau Capella <pcapella@ac.upc.edu>
+	  Això no hauria d'estar aqui
+
+2006-02-23 12:54  pcapella
+
+	* src/core/: nminterpret.cpp, nminterpret.h: Pau Capella
+	  <pcapella@ac.upc.edu>  Ara cream una nova tasca per cada petició
+	  i la afegim al NMTaskManager
+
+2006-02-23 12:53  pcapella
+
+	* src/core/: nmtask.cpp, nmtask.h: Pau Capella
+	  <pcapella@ac.upc.edu>    La classe NMTask s'ha convertit amb una
+	  classe abstracta en la que es bassen les classes NMTask*.
+
+2006-02-23 12:52  pcapella
+
+	* src/core/: nmtaskclean.cpp, nmtaskclean.h, nmtaskcompleted.cpp,
+	  nmtaskcompleted.h, nmtaskdirty.cpp, nmtaskdirty.h,
+	  nmtaskstatus.cpp, nmtaskstatus.h: Pau Capella
+	  <pcapella@ac.upc.edu>        Ara intereccionen amb les noves
+	  classes Task*
+
+2006-02-23 12:51  pcapella
+
+	* src/core/: nmstation.cpp, nmstation.h: Pau Capella
+	  <pcapella@ac.upc.edu>      Correcció de la variable m_managament
+
+2006-02-23 12:49  pcapella
+
+	* src/core/Makefile.am: Pau Capella <pcapella@ac.upc.edu>	Nou
+	  Makefile per les noves classes
+
+2006-02-23 12:49  pcapella
+
+	* src/core/: nmmoduleinterface.cpp, nmmoduleinterface.h: Pau
+	  Capella <pcapella@ac.upc.edu>      -Ara agafem el nom del plugin
+	  del parent.	    -Afegits nous mètodes testId i setTestid
+	  -Implementació de la funció exit
+
+2006-02-23 12:47  pcapella
+
+	* src/core/nmmodule.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Canvi en la forma que carreguem les interfícies del moduls
+
+2006-02-23 12:46  pcapella
+
+	* src/core/: nmtaskmanager.cpp, nmtaskmanager.h: Pau Capella
+	  <pcapella@ac.upc.edu>      Nou metode addNewTask que reemplaça al
+	  addTask
+
+2006-02-23 12:44  pcapella
+
+	* src/core/nminterface.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Corregit bug que provocava segmention fault en el moment d'enviar
+	  un error al client. quan no hi havia cap client connectat
+
+2006-02-23 12:43  pcapella
+
+	* src/core/: nmtaskconfigure.cpp, nmtaskconfigure.h,
+	  nmtaskdeattach.cpp, nmtaskdeattach.h, nmtaskpurgeplugin.cpp,
+	  nmtaskpurgeplugin.h, nmtaskquit.cpp, nmtaskquit.h,
+	  nmtaskstart.cpp, nmtaskstart.h, nmtaskstat.cpp, nmtaskstat.h,
+	  nmtaskstop.cpp, nmtaskstop.h: Pau Capella <pcapella@ac.upc.edu>
+	  Agegides noves classes que reprensentes les diferents tasques
+	  que pot executar NetMeter: start, stop, configure, stop, quit,
+	  deattach, purgeplugin.
+
+2006-02-23 12:39  pcapella
+
+	* src/core/nmexternalremote.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Corregit bug, que donava segmention fault quan saltava el
+	  timeout en la conexió ssh
+
+2006-02-22 19:20  enieto
+
+	* src/core/: nmmodulefactory.cpp, nmmodulefactory.h,
+	  nmmodulemanager.cpp, nmmodulemanager.h: Actulaitzacio classes
+	  core per a poder heretar a la GUI i fer les gestions pertinents
+
+2006-02-22 19:16  enieto
+
+	* src/plugins/libnmmgen/nmmgen.h: Actualitzacio modul mgen core
+
+2006-02-15 19:11  pcapella
+
+	* src/core/nmhost.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Afegits nous comentaris
+
+2006-02-15 19:09  pcapella
+
+	* src/core/: nmstation.cpp, nmstation.h: Pau Capella
+	  <pcapella@ac.upc.edu>      Afegida classe NMStation; dona
+	  informació sobre una estació de mesura
+
+2006-02-14 16:22  pcapella
+
+	* src/nmbash/nmbash.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Borrem la part de Oreneta
+
+2006-02-14 16:20  pcapella
+
+	* src/nmbash/nmbash.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Canvi per la nova interficie de NMSocketRemote
+
+2006-02-14 16:14  pcapella
+
+	* src/netmeter.cpp: Pau Capella <pcapella@ac.upc.edu>	Agegit
+	  NMInterface al main
+
+2006-02-14 16:12  pcapella
+
+	* src/core/nmtaskstatus.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Canvi a run() donat per la nova API de NMInterface
+
+2006-02-14 16:09  pcapella
+
+	* src/core/nmexternalremote.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Canvi de getFd() a fd()
+
+2006-02-14 16:08  pcapella
+
+	* src/core/nmeventmanager.cpp: Pau Capella <pcapella@ac.upc.edu>
+	  Corregit bug que provocava la activació d'un event quan no hi
+	  havia cap objecte connectat.
+
+2006-02-14 16:07  pcapella
+
+	* src/core/nmerror.h: Pau Capella <pcapella@ac.upc.edu>
+	  Afegits valors per defecte en NMErrorType
+
+2006-02-14 16:05  pcapella
+
+	* src/core/: Makefile.am, Makefile.in: Pau Capella
+	  <pcapella@ac.upc.edu>        Canvis donats per afegir la nova
+	  classe NMServerSocket
+
+2006-02-14 16:03  pcapella
+
+	* src/core/: nmbuffer.h, nmfile.cpp, nmfile.h: Pau Capella
+	  <pcapella@ac.upc.edu>        Canvi de NMFileModes per NMFileMode
+
+2006-02-14 16:02  pcapella
+
+	* src/core/: nminterpret.cpp, nminterpret.h: Pau Capella
+	  <pcapella@ac.upc.edu>  Modificacions per poder accedir a la nova
+	  API de NMInterface
+
+2006-02-14 16:01  pcapella
+
+	* src/core/: nminterface.cpp, nminterface.h: Pau Capella
+	  <pcapella@ac.upc.edu>  Ara treballa conjuntament amb la nova
+	  classe NMServerSocket
+
+2006-02-14 16:00  pcapella
+
+	* src/core/: nmsocket.cpp, nmsocket.h: Pau Capella
+	  <pcapella@ac.upc.edu>        Neteja de codi
+
+2006-02-14 15:57  pcapella
+
+	* src/core/: nmsocketremote.cpp, nmsocketremote.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Permet gestionar connexions UDP
+
+2006-02-14 15:53  pcapella
+
+	* src/core/: nmserversocket.cpp, nmserversocket.h: Pau Capella
+	  <pcapella@ac.upc.edu>    Afegida nova classe NMServerSocket, que
+	  ajuda a NMInterface en gestió del sockets
+
+2006-02-13 13:54  dlacort
+
+	* src/core/: nmstring.cpp, nmstring.h: Actualitzat mail de contacte
+
+2006-02-11 18:09  enieto
+
+	* configure.in, src/plugins/Makefile.am, src/plugins/Makefile.in:
+	  Actualitzacio modul mgen core
+
+2006-02-11 18:02  enieto
+
+	* src/plugins/: Makefile.am, Makefile.in: Actualitzacio modul mgen
+	  core
+
+2006-02-11 17:57  enieto
+
+	* src/plugins/Makefile.in: Actualitzacio modul mgen core
+
+2006-02-11 17:56  enieto
+
+	* src/netmeter.cpp: Actualitzacio main core per a quecarreguiel
+	  plugin del MGen
+
+2006-02-09 18:58  enieto
+
+	* src/plugins/: libnmmgen/Makefile.am, libnmmgen/Makefile.in,
+	  Makefile.am: Actualitzacio modul mgen core
+
+2006-02-09 18:56  enieto
+
+	* src/plugins/libnmmgen/: nmmgen.cpp, nmmgen.h: ActualitzaciÃ³
+	  mÃ²dul mgen core
+
+2006-02-08 18:25  pcapella
+
+	* src/core/nmmoduleinterface.cpp: Pau Capella
+	  <pcapella@ac.upc.edu>:    - Actulització per la nova funcio
+	  generateError
+
+2006-02-08 13:23  pcapella
+
+	* src/core/: nminterpret.cpp, nminterpret.h: Pau Capella
+	  <pcapella@ac.upc.edu>: S'ampliar el protocol amb les trames NACK
+	  i separació amb el id de missatge i el id del test (test)
+
+2006-02-07 17:25  pcapella
+
+	* configure.in: configure.in
+
+2006-02-07 17:14  pcapella
+
+	* src/plugins/: Makefile.am, Makefile.in: [no log message]
+
+2006-02-07 17:08  pcapella
+
+	* src/: netmeter.cpp, plugins/libnmping/nmping.cpp,
+	  plugins/libnmping/nmping.h, plugins/libnmtrace/Makefile.am,
+	  plugins/libnmtrace/Makefile.in, plugins/libnmtrace/nmtrace.cpp,
+	  plugins/libnmtrace/nmtrace.h: Pau Capella <pcapella@ac.upc.edu>:
+		Afegit el plugin NMTrace.	Neteja de codi del plugin
+	  NMPing.
+
+2006-02-07 12:57  pcapella
+
+	* src/: netmeter.cpp, core/nminterface.cpp, core/nminterface.h: Pau
+	  Capella <pcapella@ac.upc.edu>:      Corregit bug en el
+	  NMInterface provocava Segmention Fault en rebre missatges gran
+	  per part de la GUI.	Corregit bug en el netmeter.cpp, no
+	  alliberava la memoria del taskmanager quan no es podia crear el
+	  socket servidor.
+
+2006-02-07 12:15  pcapella
+
+	* src/core/: nmmodulemanager.cpp, nmmodulemanager.h, nmsocket.cpp,
+	  nmtask.cpp, nmtaskclean.cpp, nmtaskclean.h, nmtaskcompleted.cpp,
+	  nmtaskcompleted.h, nmtaskdirty.cpp, nmtaskdirty.h,
+	  nmtaskstatus.cpp, nmtaskstatus.h, nmtimer.cpp, nmtimer.h: Pau
+	  Capella <pcapella@ac.upc.ed>	     - Afegit comentaris doxygen a
+	  les classes NMTask*	    - NModuleManager: Afegit metode
+	  getModuleList()
+
+2006-02-06 18:04  pcapella
+
+	* src/: Makefile.in, netmeter.cpp, core/Makefile.am,
+	  core/Makefile.in, core/nmevent.cpp, core/nmevent.h,
+	  core/nmeventmanager.cpp, core/nmexternal.cpp, core/nmexternal.h,
+	  core/nmexternallocal.cpp, core/nmexternallocal.h,
+	  core/nmexternalremote.cpp, core/nmexternalremote.h,
+	  core/nminterface.cpp, core/nminterpret.cpp, core/nminterpret.h,
+	  core/nmmodule.cpp, core/nmmodulefactory.cpp,
+	  core/nmmoduleinterface.cpp, core/nmmoduleinterface.h,
+	  core/nmparent.cpp, core/nmparent.h, core/nmsocket.cpp,
+	  core/nmsocket.h, core/nmsocketremote.cpp, core/nmsocketremote.h,
+	  core/nmstring.cpp, core/nmstring.h, core/nmtask.cpp,
+	  core/nmtask.h, core/nmtaskclean.cpp, core/nmtaskclean.h,
+	  core/nmtaskcompleted.cpp, core/nmtaskcompleted.h,
+	  core/nmtaskdirty.cpp, core/nmtaskdirty.h, core/nmtaskmanager.cpp,
+	  core/nmtaskmanager.h, core/nmtaskstatus.cpp, core/nmtaskstatus.h,
+	  core/nmthread.cpp, core/nmtimer.cpp, core/nmtimer.h,
+	  nmbash/Makefile.in, nmbash/nmping.cpp, plugins/Makefile.in,
+	  plugins/libnmping/Makefile.in, plugins/libnmping/nmping.cpp: Pau
+	  Capella <pcapella@ac.upc.edu>  - Afegides les classes
+	  NMTaskStatus, NMTaskClean, NMTaskCompleted, NMTaskDirty; per la
+	  gestió de tasques.	   - Corregit varis bugs del gestor de
+	  memoria del NMParent :)     - Agefides classes listener per el
+	  sistema de events    - Corregits bugs de classes antigues
+
+2005-11-22 12:52  jrbenet
+
+	* src/plugins/libnmmgen/: Makefile.am, Makefile.in, nmdrec.cpp,
+	  nmdrec.h, nmmgen.cpp, nmmgen.h, nmmgenmain.cpp, nmmgenmain.cpp~,
+	  nmmgenmain.h, nmmgenmain.h~: jbenet <jbenet@ac.upc.edu> Afegit
+	  plugin mgen
+
+2005-11-11 16:59  pcapella
+
+	* src/: netmeter.cpp, core/Makefile.am, core/Makefile.in,
+	  core/nmentity.cpp, core/nmentity.h, core/nmerror.cpp,
+	  core/nmevent.cpp, core/nmevent.h, core/nmeventmanager.cpp,
+	  core/nmeventmanager.h, core/nmexternal.cpp, core/nmexternal.h,
+	  core/nmexternalevent.cpp, core/nmexternalevent.h,
+	  core/nmexternallocal.cpp, core/nmexternalremote.cpp,
+	  core/nminterface.cpp, core/nminterface.h, core/nminterpret.cpp,
+	  core/nminterpret.h, core/nmmodule.cpp, core/nmmodule.h,
+	  core/nmmodulefactory.cpp, core/nmmoduleinterface.cpp,
+	  core/nmmoduleinterface.h, core/nmmodulemanager.cpp,
+	  core/nmparent.cpp, core/nmparent.h, core/nmsocket.cpp,
+	  core/nmsocket.h, core/nmsocketevent.cpp, core/nmsocketevent.h,
+	  core/nmsocketremote.cpp, core/nmsocketremote.h,
+	  core/nmstring.cpp, core/nmstring.h, core/nmtask.cpp,
+	  core/nmtask.h, core/nmtaskmanager.cpp, core/nmtaskmanager.h,
+	  core/nmthread.cpp, core/nmthread.h, core/nmtimer.cpp,
+	  core/nmtimer.h, plugins/libnmping/nmping.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> NMEventManager: Incorporació a la
+	  llibreria. No fa falta cridar-lo al main. Nou bucle per gestionar
+	  els events.  Afegit NMTaskManager: Gestor de tasques amb plugins.
+	  NMTimer: Ja està implementat amb events.  NMSocket: Corregit bug
+	  que feia petar al NMEventManager.  Elimants: NMEntity,
+	  NMExternalEvent, NMSocketEvent.  NMPluginInterface: Afegida
+	  funció exit() per descarregar l'interficie d'un plugin.
+	  NMParent: Afegida funció events() que retorna tots els obectes
+	  que son events.
+
+2005-10-14 15:30  pcapella
+
+	* src/core/: nmtimer.cpp, nmtimer.h: Pau Capella
+	  <pcapella@ac.upc.edu> Afegida classe NMTimer.
+
+2005-10-14 15:26  pcapella
+
+	* netmeter.kdevelop, src/nmbash/nmbash.cpp, src/nmbash/nmping.cpp,
+	  src/plugins/libnmping/nmping.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> El NMPing comprova que s'executi el ping.
+	  Canvi en les dades que envia NMPing al finalitzà, ara tambè envia
+	  el host origen.
+
+2005-10-14 15:24  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmentity.h, nmevent.h,
+	  nmeventmanager.cpp, nmeventmanager.h, nmexternal.cpp,
+	  nmexternalevent.cpp, nmexternalevent.h, nmexternalremote.cpp,
+	  nminterpret.cpp, nmsocketevent.cpp, nmsocketevent.h, nmxml.cpp:
+	  Pau Capella <pcapella@ac.upc.edu> Afegides dos subclasses de
+	  NMEvent que comproven si hem de llançar el callback al gestor
+	  d'events(EventManager).  Corregit bug en la connexió ssh
+	  (NMExternalRemote) quan es produïa un timeout en la connexió.
+
+2005-10-10 18:23  pcapella
+
+	* src/: core/nminterface.cpp, core/nminterface.h,
+	  core/nminterpret.cpp, core/nminterpret.h,
+	  core/nmmoduleinterface.cpp, nmbash/main.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> NMInterpret: Els tests pendents ara
+	  incorporen el plugin que ha fet el test.  NMInterface: S'ha
+	  canviat el generatePendent() per pendent().  NMModuleInterface:
+	  Ara tambe fica el nom del plugin al generar els resultats del
+	  test.
+
+2005-10-10 11:47  ljakab
+
+	* src/core/: nmxml.cpp, nmxml.h: Corrected some NMXML bugs
+
+2005-10-10 11:42  ljakab
+
+	* src/core/nmxml.cpp: Added attribute support to root tags
+
+2005-10-10 11:09  ljakab
+
+	* ChangeLog, netmeter.kdevelop, src/core/nmxml.cpp,
+	  src/core/nmxml.h: Added delData and toFile functions to NMXML
+
+2005-10-10 10:49  pcapella
+
+	* src/nmbash/: nmbash.cpp, nmping.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> NMBash: ping imprimeix resultats
+
+2005-10-08 18:23  pcapella
+
+	* src/plugins/libnmping/nmping.cpp: Eliminat el pause, al fer el
+	  start.
+
+2005-10-07 14:01  pcapella
+
+	* netmeter.kdevelop, src/netmeter.cpp, src/core/nmeventmanager.cpp,
+	  src/core/nminterface.cpp, src/core/nminterface.h,
+	  src/core/nminterpret.cpp, src/core/nminterpret.h,
+	  src/core/nmmoduleinterface.cpp, src/core/nmmoduleinterface.h,
+	  src/core/nmtask.cpp, src/core/nmxml.cpp, src/nmbash/nmbash.cpp,
+	  src/plugins/libnmping/nmping.cpp: Pau Capella
+	  <pcapella@ac.upc.edu> El core suporta la comanda deattach, permet
+	  desconnectar el client però NetMeter continua executant'se.
+
+2005-10-03 17:40  pcapella
+
+	* src/core/: nmerror.cpp, nmerror.h, nminterpret.cpp,
+	  nminterpret.h, nmmoduleinterface.cpp: NMInterpret: Corregit
+	  mètode generateError.  NMModuleInterface: Permet enviar missatges
+	  de error.
+
+2005-09-29 19:22  ljakab
+
+	* config.guess, config.sub, ltmain.sh, netmeter.kdevelop,
+	  src/core/nminterpret.cpp, src/core/nminterpret.h,
+	  src/core/nmmodule.h, src/core/nmxml.cpp, src/core/nmxml.h,
+	  src/nmbash/main.cpp, src/nmbash/nmbash.cpp,
+	  src/nmbash/nmping.cpp, src/nmbash/nmtrace.cpp,
+	  src/plugins/libnmping/nmping.cpp: Major NMXML rewrite
+
+2005-09-28 17:08  pcapella
+
+	* src/core/: nmfile.cpp, nmfile.h: Pau Capella Afegit metode exsist
+	  i remove.  Canvi en la forma de obrir un fitxer (open)
+
+2005-09-26 18:58  pcapella
+
+	* src/core/: nmerror.cpp, nmerror.h, nmmoduleinterface.cpp: Pau
+	  Capella NMModuleInterface: Corregit bug en la sobrecarrega de
+	  operadors. ;)
+
+2005-09-26 18:35  pcapella
+
+	* src/core/: nmerror.cpp, nmerror.h, nmmoduleinterface.cpp,
+	  nmmoduleinterface.h: Pau Capella NMError: Afegit metodes per la
+	  gestió d'error de NetMeter.  NMModuleInterface: Afegit metode per
+	  tractar els errors del plugins.
+
+2005-09-26 18:01  pcapella
+
+	* netmeter.kdevelop, src/core/Makefile.am, src/core/Makefile.in,
+	  src/core/nmmodule.cpp, src/core/nmmoduleinterface.cpp,
+	  src/core/nmmoduleinterface.h, src/plugins/Makefile.in,
+	  src/plugins/libnmping/nmping.cpp: Pau Capella add a
+	  nmmoduleinterface.cpp.  Now NMModuleInterface is a friend class
+	  of NMModule
+
+2005-09-26 11:33  pcapella
+
+	* src/: Makefile.am, Makefile.in: Pau Capella.	Passem el Makefile
+	  to libxml2
+
+2005-09-26 11:08  ljakab
+
+	* templates/: cpp, h: Templates
+
+2005-09-22 11:25  pcapella
+
+	* configure.in: [no log message]
+
+2005-09-22 11:11  pcapella
+
+	* src/netmeter.cpp: Actualitzem netmeter.cpp
+
+2005-09-22 11:10  pcapella
+
+	* src/plugins/: Makefile.am, Makefile.in, libnmping/Makefile.am,
+	  libnmping/Makefile.in, libnmping/nmping.cpp, libnmping/nmping.h,
+	  libnmtrace/Makefile.am, libnmtrace/Makefile.in,
+	  libnmtrace/nmtrace.cpp, libnmtrace/nmtrace.h: Afegit plugin
+	  libnmping.
+
+2005-09-22 11:06  pcapella
+
+	* src/nmbash/: Makefile.am, Makefile.in, list.cpp, main.cpp,
+	  nmbash.cpp, nmbash.h, nmping.cpp, nmping.h, nmtrace.cpp: NMBash
+	  backup
+
+2005-09-22 11:06  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmbuffer.cpp, nmbuffer.h,
+	  nmdns.cpp, nmdns.h, nmentity.cpp, nmentity.h, nmerror.cpp,
+	  nmerror.h, nmevent.cpp, nmevent.h, nmeventmanager.cpp,
+	  nmeventmanager.h, nmexternal.cpp, nmexternal.h,
+	  nmexternallocal.cpp, nmexternallocal.h, nmexternalremote.cpp,
+	  nmexternalremote.h, nmfile.cpp, nmfile.h, nmfish.cpp, nmfish.h,
+	  nmhost.cpp, nmhost.h, nmhostipv4.cpp, nmhostipv4.h,
+	  nminterface.cpp, nminterface.h, nminterpret.cpp, nminterpret.h,
+	  nmmodule.cpp, nmmodule.h, nmmodulefactory.cpp, nmmodulefactory.h,
+	  nmmoduleinterface.h, nmmodulemanager.cpp, nmmodulemanager.h,
+	  nmmutex.cpp, nmmutex.h, nmparent.cpp, nmparent.h, nmsocket.cpp,
+	  nmsocket.h, nmsocketremote.cpp, nmsocketremote.h, nmstring.cpp,
+	  nmstring.h, nmtask.cpp, nmtask.h, nmthread.cpp, nmthread.h,
+	  nmxml.cpp, nmxml.h: Pau Capella NetMeter Backup This version
+	  don't work!
+
+2005-08-10 19:31  pcapella
+
+	* netmeter.kdevelop, src/Makefile.in, src/netmeter.cpp,
+	  src/core/Makefile.in, src/core/nmentity.cpp, src/core/nmentity.h,
+	  src/core/nmevent.cpp, src/core/nmevent.h,
+	  src/core/nmeventmanager.cpp, src/core/nmeventmanager.h,
+	  src/core/nmexternal.h, src/core/nmexternallocal.cpp,
+	  src/core/nmexternalremote.cpp, src/core/nmfile.cpp,
+	  src/core/nmfish.cpp, src/core/nmhost.h, src/core/nminterface.cpp,
+	  src/core/nminterface.h, src/core/nminterpret.cpp,
+	  src/core/nminterpret.h, src/core/nmmodule.cpp,
+	  src/core/nmmodulefactory.cpp, src/core/nmmoduleinterface.h,
+	  src/core/nmmodulemanager.cpp, src/core/nmmodulemanager.h,
+	  src/core/nmsocket.cpp, src/core/nmsocketremote.cpp,
+	  src/core/nmstring.cpp, src/core/nmstring.h, src/core/nmtask.cpp,
+	  src/core/nmtask.h, src/core/nmthread.cpp, src/core/nmthread.h,
+	  src/core/nmxml.cpp, src/core/nmxml.h, src/nmbash/Makefile.in,
+	  src/nmbash/nmbash.cpp, src/nmbash/nmtrace.cpp,
+	  src/plugins/Makefile.in, src/plugins/libnmtrace/Makefile.in,
+	  src/plugins/libnmtrace/nmtrace.cpp,
+	  src/plugins/libnmtrace/nmtrace.h: pcapella: NMEventManager: Hem
+	  netjetat codi.  NMXML: Corregit bug, ara podem accedir a un node
+	  i llistar-lo. I destrucciÃ³ del threads.  NMModuleManager:
+	  Corregit bug en el qual no podia descarregar el plugins.  BackUp
+
+2005-07-29 20:12  pcapella
+
+	* src/netmeter.cpp: Actualitzat el main.
+
+2005-07-29 20:10  pcapella
+
+	* src/Makefile.am: [no log message]
+
+2005-07-29 20:01  pcapella
+
+	* src/nmbash/: Makefile.am, Makefile.in, help.cpp, help.h,
+	  list.cpp, list.h, main.cpp, main.h, nmbash.cpp, nmbash.h,
+	  nmbashplugins.h, nmtrace.cpp, nmtrace.h: Afegida nmbash. Client
+	  per consola.
+
+2005-07-29 19:55  pcapella
+
+	* Makefile.am, config.guess, config.sub, configure.in, ltmain.sh,
+	  netmeter.kdevelop, src/Makefile.in, src/core/Makefile.in,
+	  src/core/nmerror.cpp, src/core/nmerror.h,
+	  src/plugins/Makefile.am, src/plugins/Makefile.in: backup
+
+2005-07-29 19:41  pcapella
+
+	* src/Makefile.am: corregit bug
+
+2005-07-29 19:38  pcapella
+
+	* src/plugins/libnmtrace/: Makefile.am, Makefile.in, nmtrace.cpp,
+	  nmtrace.h: Afegit plugin NMTrace
+
+2005-07-29 19:30  pcapella
+
+	* src/: Makefile.am, Makefile.in, netmeter.cpp: Corregit el main de
+	  Netmeter.
+
+2005-07-29 19:27  pcapella
+
+	* src/core/: nmentity.cpp, nmentity.h: Afegida classe NMEntity.
+
+2005-07-29 19:25  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmbuffer.cpp, nmbuffer.h,
+	  nmevent.cpp, nmevent.h, nmeventcb.cpp, nmeventcb.h,
+	  nmeventfd.cpp, nmeventfd.h, nmeventmanager.cpp, nmeventmanager.h,
+	  nmexternal.cpp, nmexternalremote.cpp, nmfish.cpp, nmhost.cpp,
+	  nmhost.h, nmhostipv4.cpp, nmhostipv4.h, nminterface.cpp,
+	  nminterface.h, nminterpret.cpp, nminterpret.h, nmmodule.cpp,
+	  nmmodule.h, nmmoduleinterface.h, nmmodulemanager.cpp,
+	  nmmodulemanager.h, nmparent.h, nmsocket.cpp, nmsocket.h,
+	  nmsocketremote.cpp, nmtask.cpp, nmtask.h, nmthread.cpp,
+	  nmthread.h, nmthreadfunc.cpp, nmthreadfunc.h, nmthreadsock.cpp,
+	  nmthreadsock.h, nmxml.cpp, nmxml.h: Afegida la classe NMTask:
+	  Sustitueix a la àntiga NMEventCb.  Corregits bugs a les altres
+	  classes.
+
+2005-07-14 16:52  pcapella
+
+	* src/: Makefile.am, Makefile.in, netmeter.cpp: Pau Capella
+
+2005-07-14 16:38  pcapella
+
+	* src/core/: nmsocketremote.cpp, nmsocketremote.h: Pau Capella S'ha
+	  afegit la classe NMSocketRemote, permet la creació de sockets
+	  orientats a conexió.
+
+2005-07-14 16:36  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmbuffer.h, nmevent.cpp,
+	  nmevent.h, nmeventfd.cpp, nmeventfd.h, nmeventmanager.cpp,
+	  nmeventmanager.h, nmexternal.h, nmexternallocal.cpp,
+	  nmexternallocal.h, nmexternalremote.cpp, nmexternalremote.h,
+	  nmfile.cpp, nmfile.h, nmfish.cpp, nmfish.h, nmhost.cpp, nmhost.h,
+	  nmhostipv4.cpp, nmhostipv4.h, nminterface.cpp, nminterface.h,
+	  nminterpret.cpp, nminterpret.h, nmmodule.cpp, nmmodule.h,
+	  nmmodulefactory.cpp, nmmoduleinterface.h, nmmodulemanager.cpp,
+	  nmmodulemanager.h, nmsocket.cpp, nmsocket.h, nmstring.cpp,
+	  nmthread.cpp, nmthread.h, nmthreadfunc.cpp, nmthreadfunc.h,
+	  nmthreadsock.cpp, nmthreadsock.h, nmxml.cpp, nmxml.h: Pau Capella
+	  Noves classes: NMInterface: Encarregada de la comunicació amb la
+	  GUI.	NMInterpret: Procesa les dades enviades per la GUI i genera
+	  una resposta per aquesta: NMThreadSock: Permet generar threads
+	  que escolten en sockets.  NMThreadFunc: Antiga classe NMThread.
+	  Altres: NMThread: S'ha convertit en una classe abstracta.
+	  NMModuleInterface, NMModuleManager, NMModule: Els moduls tenen
+	  versió.  NMEventManager: S'han afegits events de sockets.
+	  NMSocket: Corregit bug en waitMS.
+
+2005-07-11 16:04  ljakab
+
+	* configure.in: A more standardized behavior for configure
+
+2005-07-11 15:45  ljakab
+
+	* src/: Makefile.am, Makefile.in, core/Makefile.am,
+	  core/Makefile.in, plugins/Makefile.in: Configure now checks for
+	  libxml2 and adds necessary flags
+
+2005-07-11 15:42  ljakab
+
+	* configure.in: Configure now checks for libxml and configures
+	  necessary flags
+
+2005-07-08 20:28  ljakab
+
+	* netmeter.kdevelop: [no log message]
+
+2005-07-08 20:23  ljakab
+
+	* Makefile.am, config.guess, config.sub, ltmain.sh,
+	  netmeter.kdevelop, src/Makefile.am, src/Makefile.in,
+	  src/netmeter.cpp, src/core/Makefile.am, src/core/Makefile.in,
+	  src/core/nmxml.cpp, src/core/nmxml.h, templates/cpp, templates/h:
+	  [no log message]
+
+2005-07-06 16:01  ljakab
+
+	* netmeter.kdevelop, templates/cpp, templates/h: Cosmetic updates
+	  for templates
+
+2005-06-29 13:10  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmevent.cpp, nmevent.h,
+	  nmeventcb.cpp, nmeventfd.cpp, nmeventfd.h, nmeventmanager.cpp,
+	  nmeventmanager.h, nmsocket.cpp: Pau Capella.	Afegida la classe
+	  NMEventFd.
+
+2005-06-27 12:51  pcapella
+
+	* src/plugins/.hello.cpp.swp: S'ha colat un fitxer ".hello.cpp.swp"
+	  que no hauria d'estar.
+
+2005-06-27 12:43  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmevent.cpp, nmevent.h,
+	  nmeventcb.cpp, nmeventcb.h, nmeventmanager.cpp, nmeventmanager.h,
+	  nmmodulemanager.cpp, nmmodulemanager.h: Pau Capella
+	  NMEventManager: Hem canviat el struct nmevent per una classe
+	  nmevent i la subclasse nmeventcb. Son unitats d'informació d'un
+	  event.  NMModuleManager: Hem afegit el membre nmfactory a la
+	  classe.
+
+2005-06-20 12:24  pcapella
+
+	* src/: netmeter.cpp, core/nmsocket.cpp, core/nmthread.cpp,
+	  core/nmthread.h: NMThread: Afegit mètode static runThread.
+
+2005-06-17 12:05  pcapella
+
+	* src/: netmeter.cpp, core/nmbuffer.cpp, core/nmeventmanager.cpp,
+	  core/nmeventmanager.h, core/nmfish.cpp, core/nmmodule.cpp,
+	  core/nmmodule.h, core/nmmodulefactory.cpp,
+	  core/nmmodulemanager.cpp, core/nmmodulemanager.h,
+	  core/nmthread.cpp, core/nmthread.h: NMModuleManager: Ara podem
+	  descarregar el moduls.  Mes: Acutalitza la documentació.
+
+2005-06-15 12:01  pcapella
+
+	* src/core/: nmbuffer.h, nmeventmanager.cpp, nmeventmanager.h,
+	  nmfile.cpp, nmfile.h, nmmodule.cpp, nmmodule.h, nmthread.cpp,
+	  nmthread.h: NMEventManager: Agefit struct NMEvent.  NMThread:
+	  Afegit struct NMThreadInfo.
+
+2005-06-15 11:04  pcapella
+
+	* netmeter.kdevelop, src/Makefile.am, src/Makefile.in,
+	  src/netmeter.cpp, src/core/nmeventmanager.cpp,
+	  src/core/nmeventmanager.h, src/core/nmmoduleinterface.h,
+	  src/core/nmmodulemanager.cpp, src/core/nmthread.cpp,
+	  src/core/nmthread.h: NMThread: Una sola instància pot crear varis
+	  threads.  NMModuleInterface: Afegedida nova interficie per la
+	  creació de plugins.  NMModuleManager: Corregida la carrega de
+	  moduls segons la nova interfície de moduls.  NMEventManager:
+	  L'eventManager actua amb els nous metodes de NMThread.  Netmeter:
+	  Afegit test NMEventManager + NMThread.
+
+2005-06-08 13:12  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmeventmanager.cpp,
+	  nmeventmanager.h, nmparent.cpp, nmparent.h, nmsocket.cpp,
+	  nmthread.cpp, nmthread.h: NMSocket: Corrected bug in WaitMs.
+	  Added class NMThread.  NMEventManager: Supported threads.
+
+2005-06-06 12:19  pcapella
+
+	* src/core/nmmodulemanager.cpp: Arreglat bug en la funció
+	  loadModules.
+
+2005-06-06 12:13  pcapella
+
+	* src/plugins/: hello.cpp, nmmgen3.cpp, nmmgen3.h: Borrem plugins
+	  desfasats.
+
+2005-06-06 12:10  pcapella
+
+	* src/netmeter.cpp: netmeter.cpp clean.
+
+2005-06-06 12:09  pcapella
+
+	* src/core/: nmeventmanager.cpp, nmeventmanager.h: Afegim el gestor
+	  de events (nmeventmanager).
+
+2005-06-06 12:07  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmbuffer.cpp, nmbuffer.h,
+	  nmexternallocal.cpp, nmexternalremote.cpp, nmfile.cpp, nmfile.h,
+	  nmfish.cpp, nmhost.cpp, nmhost.h, nmhostipv4.cpp, nmlist.h,
+	  nmmodule.cpp, nmmodule.h, nmmodulefactory.cpp,
+	  nmmoduleinterface.h, nmmodulemanager.cpp, nmmodulemanager.h,
+	  nmsocket.cpp: backup
+
+2005-04-21 12:30  pcapella
+
+	* src/: core/nmexternalremote.cpp, core/nmexternalremote.h,
+	  core/nmhost.cpp, core/nmhost.h, core/nmsocket.cpp,
+	  core/nmsocket.h, plugins/nmmgen3.cpp, plugins/nmmgen3.h: Add new
+	  files.
+
+2005-04-21 12:02  pcapella
+
+	* netmeter.kdevelop, src/netmeter.cpp, src/core/Makefile.am,
+	  src/core/Makefile.in, src/core/nmbuffer.cpp, src/core/nmbuffer.h,
+	  src/core/nmexternal.cpp, src/core/nmexternal.h,
+	  src/core/nmexternallocal.cpp, src/core/nmexternallocal.h,
+	  src/core/nmfile.cpp, src/core/nmfile.h, src/core/nmfish.cpp,
+	  src/core/nmfish.h, src/core/nmhostipv4.cpp,
+	  src/core/nmhostipv4.h, src/core/nmmodule.cpp,
+	  src/core/nmmodule.h, src/core/nmmodulefactory.cpp,
+	  src/core/nmmodulefactory.h, src/core/nmmoduleinterface.h,
+	  src/core/nmmodulemanager.cpp, src/core/nmmodulemanager.h,
+	  src/core/nmparent.cpp, src/core/nmparent.h,
+	  src/core/nmstring.cpp, src/core/nmstring.h: Backup
+
+2005-04-11 09:52  pcapella
+
+	* src/core/: nmexternal.cpp, nmexternal.h, nmlist.cpp, nmlist.h:
+	  pcapella: Missing Source files
+
+2005-04-11 09:51  pcapella
+
+	* netmeter.kdevelop, src/netmeter.cpp, src/core/Makefile.am,
+	  src/core/Makefile.in, src/core/nmbuffer.cpp, src/core/nmbuffer.h,
+	  src/core/nmexternallocal.cpp, src/core/nmexternallocal.h,
+	  src/core/nmfile.h, src/core/nmfish.cpp, src/core/nmfish.h,
+	  src/core/nmmodule.h, src/core/nmmodulefactory.cpp,
+	  src/core/nmmodulefactory.h, src/core/nmmoduleinterface.h,
+	  src/core/nmmodulemanager.cpp, src/core/nmparent.cpp,
+	  src/core/nmparent.h, src/plugins/hello.cpp: pcapella: Backup
+
+2005-03-08 13:14  pcapella
+
+	* src/core/: nmmodulemanager.cpp, nmmodulemanager.h:
+	  nmmodulemanager: Nova classe que gestiona el moduls carregats
+	  dinàmicament.
+
+2005-03-08 13:12  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmbuffer.cpp, nmbuffer.h,
+	  nmmodule.cpp, nmmodule.h, nmmodulefactory.cpp, nmmodulefactory.h,
+	  nmparent.cpp, nmparent.h: nmbuffer: Reescrit el metode grow
+	  nmmodule: Afegits metodes a la classe nmmodulefactory: Afegit
+	  metode makeModule i eliminats els altres metodes nmparent: Afegit
+	  atribut parent a la classe
+
+2005-03-08 13:05  pcapella
+
+	* netmeter.kdevelop, src/Makefile.in, src/netmeter.cpp,
+	  src/plugins/Makefile.in: [no log message]
+
+2005-03-03 10:04  pcapella
+
+	* src/core/: Makefile.am, Makefile.in, nmbuffer.cpp, nmbuffer.h,
+	  nmfile.cpp, nmfile.h, nmmodule.cpp, nmmodule.h,
+	  nmmodulefactory.cpp, nmmodulefactory.h, nmmoduleinterface.h,
+	  nmparent.cpp, nmparent.h, nmstring.cpp, nmstring.h: Initial core
+	  branch
+
+2005-03-03 09:59  pcapella
+
+	* AUTHORS, ChangeLog, config.guess, config.sub, COPYING, INSTALL,
+	  Makefile.am, Makefile.cvs, NEWS, README, TODO, configure.in,
+	  depcomp, install-sh, ltmain.sh, missing, mkinstalldirs,
+	  netmeter.kdevelop, stamp-h.in, src/Makefile.am, src/Makefile.in,
+	  src/netmeter.cpp, src/plugins/.hello.cpp.swp,
+	  src/plugins/Makefile.am, src/plugins/Makefile.in,
+	  src/plugins/hello.cpp, templates/cpp, templates/h: Initial
+	  Netmeter Branch
+
+2005-03-03 09:59  pcapella
+
+	* AUTHORS, ChangeLog, config.guess, config.sub, COPYING, INSTALL,
+	  Makefile.am, Makefile.cvs, NEWS, README, TODO, configure.in,
+	  depcomp, install-sh, ltmain.sh, missing, mkinstalldirs,
+	  netmeter.kdevelop, stamp-h.in, src/Makefile.am, src/Makefile.in,
+	  src/netmeter.cpp, src/plugins/.hello.cpp.swp,
+	  src/plugins/Makefile.am, src/plugins/Makefile.in,
+	  src/plugins/hello.cpp, templates/cpp, templates/h: Initial
+	  revision
+

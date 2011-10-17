@@ -1,0 +1,8 @@
+add_subdirectory(libnmexemple)
+add_subdirectory(libnmping)
+add_subdirectory(libnmtrace)
+add_subdirectory(libnmmgen)
+add_subdirectory(libnmnetperf)
+add_subdirectory(libnmsnooper)
+add_subdirectory(libnmsimulator)
+add_subdirectory(libnmsync)

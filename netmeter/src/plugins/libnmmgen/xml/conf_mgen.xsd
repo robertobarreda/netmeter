@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="conf_mgen">
+		<xs:annotation>
+			<xs:documentation>MGEN configuration file</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="start" type="xs:time" minOccurs="0"/>
+				<xs:element name="port" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:positiveInteger">
+							<xs:maxInclusive value="65535"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="interface" type="xs:string" minOccurs="0"/>
+				<xs:element name="ttl" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:positiveInteger">
+							<xs:maxInclusive value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:sequence maxOccurs="unbounded">
+					<xs:element name="on" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="rsvp" minOccurs="0">
+									<xs:complexType>
+										<xs:attribute name="rate" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="bucket_size" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="peak_rate" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="min" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="max" type="xs:positiveInteger" use="required"/>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="tos" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+							<xs:attribute name="time" type="xs:nonNegativeInteger" use="required"/>
+							<xs:attribute name="flow_id" type="xs:positiveInteger" use="required"/>
+							<xs:attribute name="dest" type="xs:string" use="required"/>
+							<xs:attribute name="pattern" use="required">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="PERIODIC"/>
+										<xs:enumeration value="POISSON"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+							<xs:attribute name="rate" type="xs:positiveInteger" use="required"/>
+							<xs:attribute name="size" type="xs:positiveInteger" use="required"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="mod" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="rsvp" minOccurs="0">
+									<xs:complexType>
+										<xs:attribute name="rate" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="bucket_size" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="peak_rate" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="min" type="xs:positiveInteger" use="required"/>
+										<xs:attribute name="max" type="xs:positiveInteger" use="required"/>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="tos" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+							<xs:attribute name="time" type="xs:nonNegativeInteger" use="required"/>
+							<xs:attribute name="flow_id" type="xs:positiveInteger" use="required"/>
+							<xs:attribute name="dest" type="xs:string" use="required"/>
+							<xs:attribute name="pattern" use="required">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="PERIODIC"/>
+										<xs:enumeration value="POISSON"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+							<xs:attribute name="rate" type="xs:positiveInteger" use="required"/>
+							<xs:attribute name="size" type="xs:positiveInteger" use="required"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="off" minOccurs="0">
+						<xs:complexType>
+							<xs:attribute name="time" type="xs:positiveInteger" use="required"/>
+							<xs:attribute name="flow_id" type="xs:positiveInteger" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

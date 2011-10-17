@@ -1,0 +1,34 @@
+Installation instructions netmeter core
+---------------------------------------
+
+Prerequisites
+-------------
+Linux or Unix compatible operating system
+- cmake version 2.4 or higher (patch 5 recommended)
+Development packages of:
+ - libxml2
+ - libxslt
+
+- libnetmeter
+
+Archive extraction
+------------------
+Probably you already did this
+
+$ tar -xzvf netmeter-$VERSION.tar.gz
+
+Where $VERSION is the package version
+
+Compilation and Installation
+----------------------------
+To compile and install libnetmeter using cmake run:
+$ cd netmeter-$VERSION
+$ ./configure.cmake --with-libnetmeter=<netmeter_library_path> --prefix=<netmeter_install_path>
+$ cmake .
+$ make
+$ [sudo] make install
+
+Where <netmeter_library_path> is the directory where libnetmeter is installed.
+And <netmeter_install_path> is the installation directory. <netmeter_library_path>
+and <netmeter_install_path> can be equal.
+
